@@ -1,0 +1,5507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("14c54fba-6513-4d96-a454-6f984724ccd7",{name:"Pushpendra Singh"});
+    posthog.capture("report_feature",{karate_version:"1.4.0.RC3",karate_meta:null});
+  }
+});
+</script>
+
+    <title>src.test.Features.ApiAssignment</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">4</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-03-31 06:43:17 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:19]"><span>[1:19]</span> <span>Getting all the booking id&#39;s</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:25]"><span>[2:25]</span> <span>Create Booking Validation</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[3:51]"><span>[3:51]</span> <span>Getting single booking</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4:63]"><span>[4:63]</span> <span>Update Booking Validation</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[5:91]"><span>[5:91]</span> <span>Partially updating the booking details</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[6:109]"><span>[6:109]</span> <span>Booking deletion validation</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/Features/ApiAssignment.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">End to End Api testing feature</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:19]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:19]</span>
+                <span class="scenario-name">Getting all the booking id&#39;s</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>15052</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:19]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://restful-booker.herokuapp.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">193</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/auth&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">118</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.5">{
+&quot;username&quot; : &quot;admin&quot;,
+&quot;password&quot; : &quot;password123&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13498</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">18:42:54.903 request:
+1 &gt; POST https://restful-booker.herokuapp.com/auth
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 45
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;password123&quot;}
+
+18:43:07.268 response time in milliseconds: 12350
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1711890787&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=7ONhVfuLcQ2I9BIRj57kjfikm%2BTzp%2Fq85BEBo8dfUNc%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1711890787&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=7ONhVfuLcQ2I9BIRj57kjfikm%2BTzp%2Fq85BEBo8dfUNc%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 27
+1 &lt; Etag: W/&quot;1b-0PwP2uwXQ+3QbutETtvMOR13a8c&quot;
+1 &lt; Date: Sun, 31 Mar 2024 13:13:07 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;token&quot;:&quot;c5fa3656ca78455&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenValue = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">89</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;value of the token is &#39;+ tokenValue</span>
+      </div>
+    </div>
+    <div class="time-cell passed">164</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.16">18:43:07.532 [print] value of the token is c5fa3656ca78455 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def BookingId = 0</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/booking&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">935</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.21">18:43:07.550 request:
+2 &gt; GET https://restful-booker.herokuapp.com/booking
+2 &gt; Host: restful-booker.herokuapp.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+18:43:08.460 response time in milliseconds: 908
+2 &lt; 200
+2 &lt; Server: Cowboy
+2 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1711890788&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=cH2gpYmYMvg0jCR4eKt0JSRtYXWg7RPMrh0AauYYoy0%3D&quot;}]}
+2 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1711890788&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=cH2gpYmYMvg0jCR4eKt0JSRtYXWg7RPMrh0AauYYoy0%3D
+2 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 11575
+2 &lt; Etag: W/&quot;2d37-IrukM7NsQAFuTG7cgaDLuL0LBxo&quot;
+2 &lt; Date: Sun, 31 Mar 2024 13:13:08 GMT
+2 &lt; Via: 1.1 vegur
+[{&quot;bookingid&quot;:323},{&quot;bookingid&quot;:888},{&quot;bookingid&quot;:653},{&quot;bookingid&quot;:621},{&quot;bookingid&quot;:858},{&quot;bookingid&quot;:162},{&quot;bookingid&quot;:512},{&quot;bookingid&quot;:882},{&quot;bookingid&quot;:508},{&quot;bookingid&quot;:832},{&quot;bookingid&quot;:214},{&quot;bookingid&quot;:641},{&quot;bookingid&quot;:630},{&quot;bookingid&quot;:898},{&quot;bookingid&quot;:883},{&quot;bookingid&quot;:199},{&quot;bookingid&quot;:377},{&quot;bookingid&quot;:639},{&quot;bookingid&quot;:267},{&quot;bookingid&quot;:64},{&quot;bookingid&quot;:432},{&quot;bookingid&quot;:66},{&quot;bookingid&quot;:765},{&quot;bookingid&quot;:5},{&quot;bookingid&quot;:413},{&quot;bookingid&quot;:147},{&quot;bookingid&quot;:141},{&quot;bookingid&quot;:118},{&quot;bookingid&quot;:353},{&quot;bookingid&quot;:248},{&quot;bookingid&quot;:583},{&quot;bookingid&quot;:522},{&quot;bookingid&quot;:550},{&quot;bookingid&quot;:130},{&quot;bookingid&quot;:797},{&quot;bookingid&quot;:636},{&quot;bookingid&quot;:787},{&quot;bookingid&quot;:437},{&quot;bookingid&quot;:582},{&quot;bookingid&quot;:730},{&quot;bookingid&quot;:774},{&quot;bookingid&quot;:192},{&quot;bookingid&quot;:264},{&quot;bookingid&quot;:664},{&quot;bookingid&quot;:691},{&quot;bookingid&quot;:769},{&quot;bookingid&quot;:811},{&quot;bookingid&quot;:679},{&quot;bookingid&quot;:796},{&quot;bookingid&quot;:371},{&quot;bookingid&quot;:47},{&quot;bookingid&quot;:37},{&quot;bookingid&quot;:540},{&quot;bookingid&quot;:694},{&quot;bookingid&quot;:760},{&quot;bookingid&quot;:475},{&quot;bookingid&quot;:283},{&quot;bookingid&quot;:535},{&quot;bookingid&quot;:421},{&quot;bookingid&quot;:55},{&quot;bookingid&quot;:441},{&quot;bookingid&quot;:910},{&quot;bookingid&quot;:703},{&quot;bookingid&quot;:29},{&quot;bookingid&quot;:511},{&quot;bookingid&quot;:404},{&quot;bookingid&quot;:19},{&quot;bookingid&quot;:277},{&quot;bookingid&quot;:99},{&quot;bookingid&quot;:562},{&quot;bookingid&quot;:94},{&quot;bookingid&quot;:174},{&quot;bookingid&quot;:40},{&quot;bookingid&quot;:223},{&quot;bookingid&quot;:879},{&quot;bookingid&quot;:102},{&quot;bookingid&quot;:34},{&quot;bookingid&quot;:454},{&quot;bookingid&quot;:304},{&quot;bookingid&quot;:317},{&quot;bookingid&quot;:789},{&quot;bookingid&quot;:300},{&quot;bookingid&quot;:752},{&quot;bookingid&quot;:852},{&quot;bookingid&quot;:191},{&quot;bookingid&quot;:480},{&quot;bookingid&quot;:673},{&quot;bookingid&quot;:856},{&quot;bookingid&quot;:238},{&quot;bookingid&quot;:707},{&quot;bookingid&quot;:86},{&quot;bookingid&quot;:632},{&quot;bookingid&quot;:276},{&quot;bookingid&quot;:275},{&quot;bookingid&quot;:242},{&quot;bookingid&quot;:154},{&quot;bookingid&quot;:381},{&quot;bookingid&quot;:505},{&quot;bookingid&quot;:217},{&quot;bookingid&quot;:362},{&quot;bookingid&quot;:299},{&quot;bookingid&quot;:881},{&quot;bookingid&quot;:194},{&quot;bookingid&quot;:412},{&quot;bookingid&quot;:723},{&quot;bookingid&quot;:360},{&quot;bookingid&quot;:837},{&quot;bookingid&quot;:309},{&quot;bookingid&quot;:135},{&quot;bookingid&quot;:230},{&quot;bookingid&quot;:554},{&quot;bookingid&quot;:120},{&quot;bookingid&quot;:622},{&quot;bookingid&quot;:615},{&quot;bookingid&quot;:209},{&quot;bookingid&quot;:351},{&quot;bookingid&quot;:428},{&quot;bookingid&quot;:161},{&quot;bookingid&quot;:674},{&quot;bookingid&quot;:612},{&quot;bookingid&quot;:618},{&quot;bookingid&quot;:793},{&quot;bookingid&quot;:259},{&quot;bookingid&quot;:506},{&quot;bookingid&quot;:516},{&quot;bookingid&quot;:467},{&quot;bookingid&quot;:89},{&quot;bookingid&quot;:606},{&quot;bookingid&quot;:262},{&quot;bookingid&quot;:715},{&quot;bookingid&quot;:132},{&quot;bookingid&quot;:474},{&quot;bookingid&quot;:771},{&quot;bookingid&quot;:88},{&quot;bookingid&quot;:843},{&quot;bookingid&quot;:20},{&quot;bookingid&quot;:97},{&quot;bookingid&quot;:597},{&quot;bookingid&quot;:39},{&quot;bookingid&quot;:169},{&quot;bookingid&quot;:601},{&quot;bookingid&quot;:744},{&quot;bookingid&quot;:261},{&quot;bookingid&quot;:548},{&quot;bookingid&quot;:580},{&quot;bookingid&quot;:880},{&quot;bookingid&quot;:498},{&quot;bookingid&quot;:178},{&quot;bookingid&quot;:90},{&quot;bookingid&quot;:157},{&quot;bookingid&quot;:453},{&quot;bookingid&quot;:716},{&quot;bookingid&quot;:578},{&quot;bookingid&quot;:873},{&quot;bookingid&quot;:378},{&quot;bookingid&quot;:746},{&quot;bookingid&quot;:559},{&quot;bookingid&quot;:833},{&quot;bookingid&quot;:14},{&quot;bookingid&quot;:294},{&quot;bookingid&quot;:627},{&quot;bookingid&quot;:36},{&quot;bookingid&quot;:397},{&quot;bookingid&quot;:163},{&quot;bookingid&quot;:747},{&quot;bookingid&quot;:872},{&quot;bookingid&quot;:853},{&quot;bookingid&quot;:389},{&quot;bookingid&quot;:252},{&quot;bookingid&quot;:486},{&quot;bookingid&quot;:555},{&quot;bookingid&quot;:208},{&quot;bookingid&quot;:423},{&quot;bookingid&quot;:382},{&quot;bookingid&quot;:93},{&quot;bookingid&quot;:712},{&quot;bookingid&quot;:758},{&quot;bookingid&quot;:834},{&quot;bookingid&quot;:567},{&quot;bookingid&quot;:884},{&quot;bookingid&quot;:488},{&quot;bookingid&quot;:608},{&quot;bookingid&quot;:232},{&quot;bookingid&quot;:111},{&quot;bookingid&quot;:803},{&quot;bookingid&quot;:16},{&quot;bookingid&quot;:288},{&quot;bookingid&quot;:445},{&quot;bookingid&quot;:609},{&quot;bookingid&quot;:253},{&quot;bookingid&quot;:871},{&quot;bookingid&quot;:573},{&quot;bookingid&quot;:625},{&quot;bookingid&quot;:23},{&quot;bookingid&quot;:466},{&quot;bookingid&quot;:893},{&quot;bookingid&quot;:395},{&quot;bookingid&quot;:670},{&quot;bookingid&quot;:813},{&quot;bookingid&quot;:890},{&quot;bookingid&quot;:820},{&quot;bookingid&quot;:446},{&quot;bookingid&quot;:370},{&quot;bookingid&quot;:607},{&quot;bookingid&quot;:816},{&quot;bookingid&quot;:720},{&quot;bookingid&quot;:203},{&quot;bookingid&quot;:772},{&quot;bookingid&quot;:278},{&quot;bookingid&quot;:333},{&quot;bookingid&quot;:84},{&quot;bookingid&quot;:926},{&quot;bookingid&quot;:784},{&quot;bookingid&quot;:13},{&quot;bookingid&quot;:786},{&quot;bookingid&quot;:452},{&quot;bookingid&quot;:235},{&quot;bookingid&quot;:361},{&quot;bookingid&quot;:897},{&quot;bookingid&quot;:373},{&quot;bookingid&quot;:830},{&quot;bookingid&quot;:764},{&quot;bookingid&quot;:661},{&quot;bookingid&quot;:484},{&quot;bookingid&quot;:170},{&quot;bookingid&quot;:112},{&quot;bookingid&quot;:148},{&quot;bookingid&quot;:543},{&quot;bookingid&quot;:52},{&quot;bookingid&quot;:840},{&quot;bookingid&quot;:226},{&quot;bookingid&quot;:527},{&quot;bookingid&quot;:611},{&quot;bookingid&quot;:855},{&quot;bookingid&quot;:266},{&quot;bookingid&quot;:394},{&quot;bookingid&quot;:921},{&quot;bookingid&quot;:73},{&quot;bookingid&quot;:676},{&quot;bookingid&quot;:401},{&quot;bookingid&quot;:551},{&quot;bookingid&quot;:117},{&quot;bookingid&quot;:807},{&quot;bookingid&quot;:202},{&quot;bookingid&quot;:18},{&quot;bookingid&quot;:645},{&quot;bookingid&quot;:95},{&quot;bookingid&quot;:385},{&quot;bookingid&quot;:319},{&quot;bookingid&quot;:470},{&quot;bookingid&quot;:406},{&quot;bookingid&quot;:577},{&quot;bookingid&quot;:909},{&quot;bookingid&quot;:221},{&quot;bookingid&quot;:925},{&quot;bookingid&quot;:462},{&quot;bookingid&quot;:557},{&quot;bookingid&quot;:100},{&quot;bookingid&quot;:372},{&quot;bookingid&quot;:827},{&quot;bookingid&quot;:139},{&quot;bookingid&quot;:405},{&quot;bookingid&quot;:61},{&quot;bookingid&quot;:600},{&quot;bookingid&quot;:668},{&quot;bookingid&quot;:778},{&quot;bookingid&quot;:726},{&quot;bookingid&quot;:728},{&quot;bookingid&quot;:334},{&quot;bookingid&quot;:150},{&quot;bookingid&quot;:225},{&quot;bookingid&quot;:268},{&quot;bookingid&quot;:244},{&quot;bookingid&quot;:515},{&quot;bookingid&quot;:759},{&quot;bookingid&quot;:151},{&quot;bookingid&quot;:521},{&quot;bookingid&quot;:587},{&quot;bookingid&quot;:396},{&quot;bookingid&quot;:438},{&quot;bookingid&quot;:659},{&quot;bookingid&quot;:501},{&quot;bookingid&quot;:398},{&quot;bookingid&quot;:180},{&quot;bookingid&quot;:210},{&quot;bookingid&quot;:725},{&quot;bookingid&quot;:854},{&quot;bookingid&quot;:218},{&quot;bookingid&quot;:649},{&quot;bookingid&quot;:329},{&quot;bookingid&quot;:345},{&quot;bookingid&quot;:185},{&quot;bookingid&quot;:590},{&quot;bookingid&quot;:320},{&quot;bookingid&quot;:596},{&quot;bookingid&quot;:26},{&quot;bookingid&quot;:48},{&quot;bookingid&quot;:228},{&quot;bookingid&quot;:848},{&quot;bookingid&quot;:160},{&quot;bookingid&quot;:348},{&quot;bookingid&quot;:49},{&quot;bookingid&quot;:364},{&quot;bookingid&quot;:702},{&quot;bookingid&quot;:247},{&quot;bookingid&quot;:128},{&quot;bookingid&quot;:513},{&quot;bookingid&quot;:104},{&quot;bookingid&quot;:408},{&quot;bookingid&quot;:171},{&quot;bookingid&quot;:842},{&quot;bookingid&quot;:696},{&quot;bookingid&quot;:410},{&quot;bookingid&quot;:426},{&quot;bookingid&quot;:46},{&quot;bookingid&quot;:125},{&quot;bookingid&quot;:685},{&quot;bookingid&quot;:245},{&quot;bookingid&quot;:138},{&quot;bookingid&quot;:7},{&quot;bookingid&quot;:330},{&quot;bookingid&quot;:457},{&quot;bookingid&quot;:862},{&quot;bookingid&quot;:17},{&quot;bookingid&quot;:477},{&quot;bookingid&quot;:800},{&quot;bookingid&quot;:763},{&quot;bookingid&quot;:628},{&quot;bookingid&quot;:706},{&quot;bookingid&quot;:735},{&quot;bookingid&quot;:566},{&quot;bookingid&quot;:841},{&quot;bookingid&quot;:234},{&quot;bookingid&quot;:731},{&quot;bookingid&quot;:291},{&quot;bookingid&quot;:777},{&quot;bookingid&quot;:282},{&quot;bookingid&quot;:4},{&quot;bookingid&quot;:365},{&quot;bookingid&quot;:181},{&quot;bookingid&quot;:21},{&quot;bookingid&quot;:889},{&quot;bookingid&quot;:424},{&quot;bookingid&quot;:43},{&quot;bookingid&quot;:31},{&quot;bookingid&quot;:51},{&quot;bookingid&quot;:657},{&quot;bookingid&quot;:901},{&quot;bookingid&quot;:483},{&quot;bookingid&quot;:60},{&quot;bookingid&quot;:708},{&quot;bookingid&quot;:633},{&quot;bookingid&quot;:390},{&quot;bookingid&quot;:741},{&quot;bookingid&quot;:156},{&quot;bookingid&quot;:599},{&quot;bookingid&quot;:823},{&quot;bookingid&quot;:285},{&quot;bookingid&quot;:753},{&quot;bookingid&quot;:11},{&quot;bookingid&quot;:77},{&quot;bookingid&quot;:41},{&quot;bookingid&quot;:308},{&quot;bookingid&quot;:81},{&quot;bookingid&quot;:342},{&quot;bookingid&quot;:864},{&quot;bookingid&quot;:296},{&quot;bookingid&quot;:767},{&quot;bookingid&quot;:822},{&quot;bookingid&quot;:414},{&quot;bookingid&quot;:667},{&quot;bookingid&quot;:78},{&quot;bookingid&quot;:87},{&quot;bookingid&quot;:762},{&quot;bookingid&quot;:3},{&quot;bookingid&quot;:98},{&quot;bookingid&quot;:206},{&quot;bookingid&quot;:665},{&quot;bookingid&quot;:307},{&quot;bookingid&quot;:472},{&quot;bookingid&quot;:831},{&quot;bookingid&quot;:698},{&quot;bookingid&quot;:900},{&quot;bookingid&quot;:44},{&quot;bookingid&quot;:733},{&quot;bookingid&quot;:250},{&quot;bookingid&quot;:133},{&quot;bookingid&quot;:74},{&quot;bookingid&quot;:558},{&quot;bookingid&quot;:846},{&quot;bookingid&quot;:419},{&quot;bookingid&quot;:891},{&quot;bookingid&quot;:640},{&quot;bookingid&quot;:388},{&quot;bookingid&quot;:814},{&quot;bookingid&quot;:280},{&quot;bookingid&quot;:290},{&quot;bookingid&quot;:662},{&quot;bookingid&quot;:750},{&quot;bookingid&quot;:127},{&quot;bookingid&quot;:552},{&quot;bookingid&quot;:532},{&quot;bookingid&quot;:256},{&quot;bookingid&quot;:184},{&quot;bookingid&quot;:195},{&quot;bookingid&quot;:672},{&quot;bookingid&quot;:613},{&quot;bookingid&quot;:537},{&quot;bookingid&quot;:352},{&quot;bookingid&quot;:45},{&quot;bookingid&quot;:179},{&quot;bookingid&quot;:605},{&quot;bookingid&quot;:681},{&quot;bookingid&quot;:386},{&quot;bookingid&quot;:263},{&quot;bookingid&quot;:743},{&quot;bookingid&quot;:215},{&quot;bookingid&quot;:713},{&quot;bookingid&quot;:740},{&quot;bookingid&quot;:442},{&quot;bookingid&quot;:376},{&quot;bookingid&quot;:455},{&quot;bookingid&quot;:569},{&quot;bookingid&quot;:651},{&quot;bookingid&quot;:200},{&quot;bookingid&quot;:701},{&quot;bookingid&quot;:109},{&quot;bookingid&quot;:241},{&quot;bookingid&quot;:561},{&quot;bookingid&quot;:155},{&quot;bookingid&quot;:572},{&quot;bookingid&quot;:273},{&quot;bookingid&quot;:755},{&quot;bookingid&quot;:737},{&quot;bookingid&quot;:108},{&quot;bookingid&quot;:444},{&quot;bookingid&quot;:593},{&quot;bookingid&quot;:236},{&quot;bookingid&quot;:341},{&quot;bookingid&quot;:80},{&quot;bookingid&quot;:510},{&quot;bookingid&quot;:652},{&quot;bookingid&quot;:502},{&quot;bookingid&quot;:105},{&quot;bookingid&quot;:861},{&quot;bookingid&quot;:523},{&quot;bookingid&quot;:603},{&quot;bookingid&quot;:695},{&quot;bookingid&quot;:586},{&quot;bookingid&quot;:689},{&quot;bookingid&quot;:479},{&quot;bookingid&quot;:22},{&quot;bookingid&quot;:738},{&quot;bookingid&quot;:113},{&quot;bookingid&quot;:50},{&quot;bookingid&quot;:790},{&quot;bookingid&quot;:166},{&quot;bookingid&quot;:176},{&quot;bookingid&quot;:690},{&quot;bookingid&quot;:305},{&quot;bookingid&quot;:213},{&quot;bookingid&quot;:867},{&quot;bookingid&quot;:620},{&quot;bookingid&quot;:140},{&quot;bookingid&quot;:143},{&quot;bookingid&quot;:870},{&quot;bookingid&quot;:15},{&quot;bookingid&quot;:503},{&quot;bookingid&quot;:806},{&quot;bookingid&quot;:417},{&quot;bookingid&quot;:680},{&quot;bookingid&quot;:868},{&quot;bookingid&quot;:835},{&quot;bookingid&quot;:358},{&quot;bookingid&quot;:849},{&quot;bookingid&quot;:10},{&quot;bookingid&quot;:579},{&quot;bookingid&quot;:343},{&quot;bookingid&quot;:874},{&quot;bookingid&quot;:28},{&quot;bookingid&quot;:917},{&quot;bookingid&quot;:357},{&quot;bookingid&quot;:316},{&quot;bookingid&quot;:638},{&quot;bookingid&quot;:116},{&quot;bookingid&quot;:436},{&quot;bookingid&quot;:325},{&quot;bookingid&quot;:469},{&quot;bookingid&quot;:899},{&quot;bookingid&quot;:6},{&quot;bookingid&quot;:693},{&quot;bookingid&quot;:465},{&quot;bookingid&quot;:678},{&quot;bookingid&quot;:780},{&quot;bookingid&quot;:367},{&quot;bookingid&quot;:719},{&quot;bookingid&quot;:919},{&quot;bookingid&quot;:539},{&quot;bookingid&quot;:491},{&quot;bookingid&quot;:751},{&quot;bookingid&quot;:289},{&quot;bookingid&quot;:542},{&quot;bookingid&quot;:134},{&quot;bookingid&quot;:906},{&quot;bookingid&quot;:795},{&quot;bookingid&quot;:189},{&quot;bookingid&quot;:313},{&quot;bookingid&quot;:533},{&quot;bookingid&quot;:207},{&quot;bookingid&quot;:434},{&quot;bookingid&quot;:8},{&quot;bookingid&quot;:76},{&quot;bookingid&quot;:182},{&quot;bookingid&quot;:449},{&quot;bookingid&quot;:379},{&quot;bookingid&quot;:387},{&quot;bookingid&quot;:336},{&quot;bookingid&quot;:57},{&quot;bookingid&quot;:1},{&quot;bookingid&quot;:783},{&quot;bookingid&quot;:433},{&quot;bookingid&quot;:310},{&quot;bookingid&quot;:281},{&quot;bookingid&quot;:183},{&quot;bookingid&quot;:53},{&quot;bookingid&quot;:402},{&quot;bookingid&quot;:314},{&quot;bookingid&quot;:459},{&quot;bookingid&quot;:70},{&quot;bookingid&quot;:635},{&quot;bookingid&quot;:531},{&quot;bookingid&quot;:355},{&quot;bookingid&quot;:124},{&quot;bookingid&quot;:368},{&quot;bookingid&quot;:69},{&quot;bookingid&quot;:240},{&quot;bookingid&quot;:654},{&quot;bookingid&quot;:520},{&quot;bookingid&quot;:106},{&quot;bookingid&quot;:524},{&quot;bookingid&quot;:448},{&quot;bookingid&quot;:295},{&quot;bookingid&quot;:570},{&quot;bookingid&quot;:346},{&quot;bookingid&quot;:544},{&quot;bookingid&quot;:54},{&quot;bookingid&quot;:119},{&quot;bookingid&quot;:56},{&quot;bookingid&quot;:623},{&quot;bookingid&quot;:847},{&quot;bookingid&quot;:63},{&quot;bookingid&quot;:302},{&quot;bookingid&quot;:339},{&quot;bookingid&quot;:326},{&quot;bookingid&quot;:65},{&quot;bookingid&quot;:911},{&quot;bookingid&quot;:83},{&quot;bookingid&quot;:270},{&quot;bookingid&quot;:594},{&quot;bookingid&quot;:920},{&quot;bookingid&quot;:27},{&quot;bookingid&quot;:415},{&quot;bookingid&quot;:224},{&quot;bookingid&quot;:721},{&quot;bookingid&quot;:749},{&quot;bookingid&quot;:591},{&quot;bookingid&quot;:775},{&quot;bookingid&quot;:687},{&quot;bookingid&quot;:700},{&quot;bookingid&quot;:902},{&quot;bookingid&quot;:912},{&quot;bookingid&quot;:258},{&quot;bookingid&quot;:918},{&quot;bookingid&quot;:802},{&quot;bookingid&quot;:328},{&quot;bookingid&quot;:493},{&quot;bookingid&quot;:190},{&quot;bookingid&quot;:916},{&quot;bookingid&quot;:684},{&quot;bookingid&quot;:528},{&quot;bookingid&quot;:779},{&quot;bookingid&quot;:815},{&quot;bookingid&quot;:908},{&quot;bookingid&quot;:495},{&quot;bookingid&quot;:460},{&quot;bookingid&quot;:526},{&quot;bookingid&quot;:497},{&quot;bookingid&quot;:799},{&quot;bookingid&quot;:271},{&quot;bookingid&quot;:2},{&quot;bookingid&quot;:33},{&quot;bookingid&quot;:149},{&quot;bookingid&quot;:798},{&quot;bookingid&quot;:71},{&quot;bookingid&quot;:173},{&quot;bookingid&quot;:792},{&quot;bookingid&quot;:197},{&quot;bookingid&quot;:123},{&quot;bookingid&quot;:818},{&quot;bookingid&quot;:9},{&quot;bookingid&quot;:710},{&quot;bookingid&quot;:805},{&quot;bookingid&quot;:825},{&quot;bookingid&quot;:545},{&quot;bookingid&quot;:574},{&quot;bookingid&quot;:220},{&quot;bookingid&quot;:648},{&quot;bookingid&quot;:869},{&quot;bookingid&quot;:322},{&quot;bookingid&quot;:12},{&quot;bookingid&quot;:717},{&quot;bookingid&quot;:42},{&quot;bookingid&quot;:892},{&quot;bookingid&quot;:254},{&quot;bookingid&quot;:451},{&quot;bookingid&quot;:142},{&quot;bookingid&quot;:617},{&quot;bookingid&quot;:727},{&quot;bookingid&quot;:337},{&quot;bookingid&quot;:688},{&quot;bookingid&quot;:656},{&quot;bookingid&quot;:167},{&quot;bookingid&quot;:907},{&quot;bookingid&quot;:335},{&quot;bookingid&quot;:430},{&quot;bookingid&quot;:198},{&quot;bookingid&quot;:298},{&quot;bookingid&quot;:529},{&quot;bookingid&quot;:863},{&quot;bookingid&quot;:588},{&quot;bookingid&quot;:644},{&quot;bookingid&quot;:478},{&quot;bookingid&quot;:768},{&quot;bookingid&quot;:808},{&quot;bookingid&quot;:489},{&quot;bookingid&quot;:824},{&quot;bookingid&quot;:923},{&quot;bookingid&quot;:121},{&quot;bookingid&quot;:383},{&quot;bookingid&quot;:487},{&quot;bookingid&quot;:646},{&quot;bookingid&quot;:563},{&quot;bookingid&quot;:403},{&quot;bookingid&quot;:25},{&quot;bookingid&quot;:331},{&quot;bookingid&quot;:507},{&quot;bookingid&quot;:496},{&quot;bookingid&quot;:427}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">40</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">18:43:08.529 [print] [
+  {
+    &quot;bookingid&quot;: 323
+  },
+  {
+    &quot;bookingid&quot;: 888
+  },
+  {
+    &quot;bookingid&quot;: 653
+  },
+  {
+    &quot;bookingid&quot;: 621
+  },
+  {
+    &quot;bookingid&quot;: 858
+  },
+  {
+    &quot;bookingid&quot;: 162
+  },
+  {
+    &quot;bookingid&quot;: 512
+  },
+  {
+    &quot;bookingid&quot;: 882
+  },
+  {
+    &quot;bookingid&quot;: 508
+  },
+  {
+    &quot;bookingid&quot;: 832
+  },
+  {
+    &quot;bookingid&quot;: 214
+  },
+  {
+    &quot;bookingid&quot;: 641
+  },
+  {
+    &quot;bookingid&quot;: 630
+  },
+  {
+    &quot;bookingid&quot;: 898
+  },
+  {
+    &quot;bookingid&quot;: 883
+  },
+  {
+    &quot;bookingid&quot;: 199
+  },
+  {
+    &quot;bookingid&quot;: 377
+  },
+  {
+    &quot;bookingid&quot;: 639
+  },
+  {
+    &quot;bookingid&quot;: 267
+  },
+  {
+    &quot;bookingid&quot;: 64
+  },
+  {
+    &quot;bookingid&quot;: 432
+  },
+  {
+    &quot;bookingid&quot;: 66
+  },
+  {
+    &quot;bookingid&quot;: 765
+  },
+  {
+    &quot;bookingid&quot;: 5
+  },
+  {
+    &quot;bookingid&quot;: 413
+  },
+  {
+    &quot;bookingid&quot;: 147
+  },
+  {
+    &quot;bookingid&quot;: 141
+  },
+  {
+    &quot;bookingid&quot;: 118
+  },
+  {
+    &quot;bookingid&quot;: 353
+  },
+  {
+    &quot;bookingid&quot;: 248
+  },
+  {
+    &quot;bookingid&quot;: 583
+  },
+  {
+    &quot;bookingid&quot;: 522
+  },
+  {
+    &quot;bookingid&quot;: 550
+  },
+  {
+    &quot;bookingid&quot;: 130
+  },
+  {
+    &quot;bookingid&quot;: 797
+  },
+  {
+    &quot;bookingid&quot;: 636
+  },
+  {
+    &quot;bookingid&quot;: 787
+  },
+  {
+    &quot;bookingid&quot;: 437
+  },
+  {
+    &quot;bookingid&quot;: 582
+  },
+  {
+    &quot;bookingid&quot;: 730
+  },
+  {
+    &quot;bookingid&quot;: 774
+  },
+  {
+    &quot;bookingid&quot;: 192
+  },
+  {
+    &quot;bookingid&quot;: 264
+  },
+  {
+    &quot;bookingid&quot;: 664
+  },
+  {
+    &quot;bookingid&quot;: 691
+  },
+  {
+    &quot;bookingid&quot;: 769
+  },
+  {
+    &quot;bookingid&quot;: 811
+  },
+  {
+    &quot;bookingid&quot;: 679
+  },
+  {
+    &quot;bookingid&quot;: 796
+  },
+  {
+    &quot;bookingid&quot;: 371
+  },
+  {
+    &quot;bookingid&quot;: 47
+  },
+  {
+    &quot;bookingid&quot;: 37
+  },
+  {
+    &quot;bookingid&quot;: 540
+  },
+  {
+    &quot;bookingid&quot;: 694
+  },
+  {
+    &quot;bookingid&quot;: 760
+  },
+  {
+    &quot;bookingid&quot;: 475
+  },
+  {
+    &quot;bookingid&quot;: 283
+  },
+  {
+    &quot;bookingid&quot;: 535
+  },
+  {
+    &quot;bookingid&quot;: 421
+  },
+  {
+    &quot;bookingid&quot;: 55
+  },
+  {
+    &quot;bookingid&quot;: 441
+  },
+  {
+    &quot;bookingid&quot;: 910
+  },
+  {
+    &quot;bookingid&quot;: 703
+  },
+  {
+    &quot;bookingid&quot;: 29
+  },
+  {
+    &quot;bookingid&quot;: 511
+  },
+  {
+    &quot;bookingid&quot;: 404
+  },
+  {
+    &quot;bookingid&quot;: 19
+  },
+  {
+    &quot;bookingid&quot;: 277
+  },
+  {
+    &quot;bookingid&quot;: 99
+  },
+  {
+    &quot;bookingid&quot;: 562
+  },
+  {
+    &quot;bookingid&quot;: 94
+  },
+  {
+    &quot;bookingid&quot;: 174
+  },
+  {
+    &quot;bookingid&quot;: 40
+  },
+  {
+    &quot;bookingid&quot;: 223
+  },
+  {
+    &quot;bookingid&quot;: 879
+  },
+  {
+    &quot;bookingid&quot;: 102
+  },
+  {
+    &quot;bookingid&quot;: 34
+  },
+  {
+    &quot;bookingid&quot;: 454
+  },
+  {
+    &quot;bookingid&quot;: 304
+  },
+  {
+    &quot;bookingid&quot;: 317
+  },
+  {
+    &quot;bookingid&quot;: 789
+  },
+  {
+    &quot;bookingid&quot;: 300
+  },
+  {
+    &quot;bookingid&quot;: 752
+  },
+  {
+    &quot;bookingid&quot;: 852
+  },
+  {
+    &quot;bookingid&quot;: 191
+  },
+  {
+    &quot;bookingid&quot;: 480
+  },
+  {
+    &quot;bookingid&quot;: 673
+  },
+  {
+    &quot;bookingid&quot;: 856
+  },
+  {
+    &quot;bookingid&quot;: 238
+  },
+  {
+    &quot;bookingid&quot;: 707
+  },
+  {
+    &quot;bookingid&quot;: 86
+  },
+  {
+    &quot;bookingid&quot;: 632
+  },
+  {
+    &quot;bookingid&quot;: 276
+  },
+  {
+    &quot;bookingid&quot;: 275
+  },
+  {
+    &quot;bookingid&quot;: 242
+  },
+  {
+    &quot;bookingid&quot;: 154
+  },
+  {
+    &quot;bookingid&quot;: 381
+  },
+  {
+    &quot;bookingid&quot;: 505
+  },
+  {
+    &quot;bookingid&quot;: 217
+  },
+  {
+    &quot;bookingid&quot;: 362
+  },
+  {
+    &quot;bookingid&quot;: 299
+  },
+  {
+    &quot;bookingid&quot;: 881
+  },
+  {
+    &quot;bookingid&quot;: 194
+  },
+  {
+    &quot;bookingid&quot;: 412
+  },
+  {
+    &quot;bookingid&quot;: 723
+  },
+  {
+    &quot;bookingid&quot;: 360
+  },
+  {
+    &quot;bookingid&quot;: 837
+  },
+  {
+    &quot;bookingid&quot;: 309
+  },
+  {
+    &quot;bookingid&quot;: 135
+  },
+  {
+    &quot;bookingid&quot;: 230
+  },
+  {
+    &quot;bookingid&quot;: 554
+  },
+  {
+    &quot;bookingid&quot;: 120
+  },
+  {
+    &quot;bookingid&quot;: 622
+  },
+  {
+    &quot;bookingid&quot;: 615
+  },
+  {
+    &quot;bookingid&quot;: 209
+  },
+  {
+    &quot;bookingid&quot;: 351
+  },
+  {
+    &quot;bookingid&quot;: 428
+  },
+  {
+    &quot;bookingid&quot;: 161
+  },
+  {
+    &quot;bookingid&quot;: 674
+  },
+  {
+    &quot;bookingid&quot;: 612
+  },
+  {
+    &quot;bookingid&quot;: 618
+  },
+  {
+    &quot;bookingid&quot;: 793
+  },
+  {
+    &quot;bookingid&quot;: 259
+  },
+  {
+    &quot;bookingid&quot;: 506
+  },
+  {
+    &quot;bookingid&quot;: 516
+  },
+  {
+    &quot;bookingid&quot;: 467
+  },
+  {
+    &quot;bookingid&quot;: 89
+  },
+  {
+    &quot;bookingid&quot;: 606
+  },
+  {
+    &quot;bookingid&quot;: 262
+  },
+  {
+    &quot;bookingid&quot;: 715
+  },
+  {
+    &quot;bookingid&quot;: 132
+  },
+  {
+    &quot;bookingid&quot;: 474
+  },
+  {
+    &quot;bookingid&quot;: 771
+  },
+  {
+    &quot;bookingid&quot;: 88
+  },
+  {
+    &quot;bookingid&quot;: 843
+  },
+  {
+    &quot;bookingid&quot;: 20
+  },
+  {
+    &quot;bookingid&quot;: 97
+  },
+  {
+    &quot;bookingid&quot;: 597
+  },
+  {
+    &quot;bookingid&quot;: 39
+  },
+  {
+    &quot;bookingid&quot;: 169
+  },
+  {
+    &quot;bookingid&quot;: 601
+  },
+  {
+    &quot;bookingid&quot;: 744
+  },
+  {
+    &quot;bookingid&quot;: 261
+  },
+  {
+    &quot;bookingid&quot;: 548
+  },
+  {
+    &quot;bookingid&quot;: 580
+  },
+  {
+    &quot;bookingid&quot;: 880
+  },
+  {
+    &quot;bookingid&quot;: 498
+  },
+  {
+    &quot;bookingid&quot;: 178
+  },
+  {
+    &quot;bookingid&quot;: 90
+  },
+  {
+    &quot;bookingid&quot;: 157
+  },
+  {
+    &quot;bookingid&quot;: 453
+  },
+  {
+    &quot;bookingid&quot;: 716
+  },
+  {
+    &quot;bookingid&quot;: 578
+  },
+  {
+    &quot;bookingid&quot;: 873
+  },
+  {
+    &quot;bookingid&quot;: 378
+  },
+  {
+    &quot;bookingid&quot;: 746
+  },
+  {
+    &quot;bookingid&quot;: 559
+  },
+  {
+    &quot;bookingid&quot;: 833
+  },
+  {
+    &quot;bookingid&quot;: 14
+  },
+  {
+    &quot;bookingid&quot;: 294
+  },
+  {
+    &quot;bookingid&quot;: 627
+  },
+  {
+    &quot;bookingid&quot;: 36
+  },
+  {
+    &quot;bookingid&quot;: 397
+  },
+  {
+    &quot;bookingid&quot;: 163
+  },
+  {
+    &quot;bookingid&quot;: 747
+  },
+  {
+    &quot;bookingid&quot;: 872
+  },
+  {
+    &quot;bookingid&quot;: 853
+  },
+  {
+    &quot;bookingid&quot;: 389
+  },
+  {
+    &quot;bookingid&quot;: 252
+  },
+  {
+    &quot;bookingid&quot;: 486
+  },
+  {
+    &quot;bookingid&quot;: 555
+  },
+  {
+    &quot;bookingid&quot;: 208
+  },
+  {
+    &quot;bookingid&quot;: 423
+  },
+  {
+    &quot;bookingid&quot;: 382
+  },
+  {
+    &quot;bookingid&quot;: 93
+  },
+  {
+    &quot;bookingid&quot;: 712
+  },
+  {
+    &quot;bookingid&quot;: 758
+  },
+  {
+    &quot;bookingid&quot;: 834
+  },
+  {
+    &quot;bookingid&quot;: 567
+  },
+  {
+    &quot;bookingid&quot;: 884
+  },
+  {
+    &quot;bookingid&quot;: 488
+  },
+  {
+    &quot;bookingid&quot;: 608
+  },
+  {
+    &quot;bookingid&quot;: 232
+  },
+  {
+    &quot;bookingid&quot;: 111
+  },
+  {
+    &quot;bookingid&quot;: 803
+  },
+  {
+    &quot;bookingid&quot;: 16
+  },
+  {
+    &quot;bookingid&quot;: 288
+  },
+  {
+    &quot;bookingid&quot;: 445
+  },
+  {
+    &quot;bookingid&quot;: 609
+  },
+  {
+    &quot;bookingid&quot;: 253
+  },
+  {
+    &quot;bookingid&quot;: 871
+  },
+  {
+    &quot;bookingid&quot;: 573
+  },
+  {
+    &quot;bookingid&quot;: 625
+  },
+  {
+    &quot;bookingid&quot;: 23
+  },
+  {
+    &quot;bookingid&quot;: 466
+  },
+  {
+    &quot;bookingid&quot;: 893
+  },
+  {
+    &quot;bookingid&quot;: 395
+  },
+  {
+    &quot;bookingid&quot;: 670
+  },
+  {
+    &quot;bookingid&quot;: 813
+  },
+  {
+    &quot;bookingid&quot;: 890
+  },
+  {
+    &quot;bookingid&quot;: 820
+  },
+  {
+    &quot;bookingid&quot;: 446
+  },
+  {
+    &quot;bookingid&quot;: 370
+  },
+  {
+    &quot;bookingid&quot;: 607
+  },
+  {
+    &quot;bookingid&quot;: 816
+  },
+  {
+    &quot;bookingid&quot;: 720
+  },
+  {
+    &quot;bookingid&quot;: 203
+  },
+  {
+    &quot;bookingid&quot;: 772
+  },
+  {
+    &quot;bookingid&quot;: 278
+  },
+  {
+    &quot;bookingid&quot;: 333
+  },
+  {
+    &quot;bookingid&quot;: 84
+  },
+  {
+    &quot;bookingid&quot;: 926
+  },
+  {
+    &quot;bookingid&quot;: 784
+  },
+  {
+    &quot;bookingid&quot;: 13
+  },
+  {
+    &quot;bookingid&quot;: 786
+  },
+  {
+    &quot;bookingid&quot;: 452
+  },
+  {
+    &quot;bookingid&quot;: 235
+  },
+  {
+    &quot;bookingid&quot;: 361
+  },
+  {
+    &quot;bookingid&quot;: 897
+  },
+  {
+    &quot;bookingid&quot;: 373
+  },
+  {
+    &quot;bookingid&quot;: 830
+  },
+  {
+    &quot;bookingid&quot;: 764
+  },
+  {
+    &quot;bookingid&quot;: 661
+  },
+  {
+    &quot;bookingid&quot;: 484
+  },
+  {
+    &quot;bookingid&quot;: 170
+  },
+  {
+    &quot;bookingid&quot;: 112
+  },
+  {
+    &quot;bookingid&quot;: 148
+  },
+  {
+    &quot;bookingid&quot;: 543
+  },
+  {
+    &quot;bookingid&quot;: 52
+  },
+  {
+    &quot;bookingid&quot;: 840
+  },
+  {
+    &quot;bookingid&quot;: 226
+  },
+  {
+    &quot;bookingid&quot;: 527
+  },
+  {
+    &quot;bookingid&quot;: 611
+  },
+  {
+    &quot;bookingid&quot;: 855
+  },
+  {
+    &quot;bookingid&quot;: 266
+  },
+  {
+    &quot;bookingid&quot;: 394
+  },
+  {
+    &quot;bookingid&quot;: 921
+  },
+  {
+    &quot;bookingid&quot;: 73
+  },
+  {
+    &quot;bookingid&quot;: 676
+  },
+  {
+    &quot;bookingid&quot;: 401
+  },
+  {
+    &quot;bookingid&quot;: 551
+  },
+  {
+    &quot;bookingid&quot;: 117
+  },
+  {
+    &quot;bookingid&quot;: 807
+  },
+  {
+    &quot;bookingid&quot;: 202
+  },
+  {
+    &quot;bookingid&quot;: 18
+  },
+  {
+    &quot;bookingid&quot;: 645
+  },
+  {
+    &quot;bookingid&quot;: 95
+  },
+  {
+    &quot;bookingid&quot;: 385
+  },
+  {
+    &quot;bookingid&quot;: 319
+  },
+  {
+    &quot;bookingid&quot;: 470
+  },
+  {
+    &quot;bookingid&quot;: 406
+  },
+  {
+    &quot;bookingid&quot;: 577
+  },
+  {
+    &quot;bookingid&quot;: 909
+  },
+  {
+    &quot;bookingid&quot;: 221
+  },
+  {
+    &quot;bookingid&quot;: 925
+  },
+  {
+    &quot;bookingid&quot;: 462
+  },
+  {
+    &quot;bookingid&quot;: 557
+  },
+  {
+    &quot;bookingid&quot;: 100
+  },
+  {
+    &quot;bookingid&quot;: 372
+  },
+  {
+    &quot;bookingid&quot;: 827
+  },
+  {
+    &quot;bookingid&quot;: 139
+  },
+  {
+    &quot;bookingid&quot;: 405
+  },
+  {
+    &quot;bookingid&quot;: 61
+  },
+  {
+    &quot;bookingid&quot;: 600
+  },
+  {
+    &quot;bookingid&quot;: 668
+  },
+  {
+    &quot;bookingid&quot;: 778
+  },
+  {
+    &quot;bookingid&quot;: 726
+  },
+  {
+    &quot;bookingid&quot;: 728
+  },
+  {
+    &quot;bookingid&quot;: 334
+  },
+  {
+    &quot;bookingid&quot;: 150
+  },
+  {
+    &quot;bookingid&quot;: 225
+  },
+  {
+    &quot;bookingid&quot;: 268
+  },
+  {
+    &quot;bookingid&quot;: 244
+  },
+  {
+    &quot;bookingid&quot;: 515
+  },
+  {
+    &quot;bookingid&quot;: 759
+  },
+  {
+    &quot;bookingid&quot;: 151
+  },
+  {
+    &quot;bookingid&quot;: 521
+  },
+  {
+    &quot;bookingid&quot;: 587
+  },
+  {
+    &quot;bookingid&quot;: 396
+  },
+  {
+    &quot;bookingid&quot;: 438
+  },
+  {
+    &quot;bookingid&quot;: 659
+  },
+  {
+    &quot;bookingid&quot;: 501
+  },
+  {
+    &quot;bookingid&quot;: 398
+  },
+  {
+    &quot;bookingid&quot;: 180
+  },
+  {
+    &quot;bookingid&quot;: 210
+  },
+  {
+    &quot;bookingid&quot;: 725
+  },
+  {
+    &quot;bookingid&quot;: 854
+  },
+  {
+    &quot;bookingid&quot;: 218
+  },
+  {
+    &quot;bookingid&quot;: 649
+  },
+  {
+    &quot;bookingid&quot;: 329
+  },
+  {
+    &quot;bookingid&quot;: 345
+  },
+  {
+    &quot;bookingid&quot;: 185
+  },
+  {
+    &quot;bookingid&quot;: 590
+  },
+  {
+    &quot;bookingid&quot;: 320
+  },
+  {
+    &quot;bookingid&quot;: 596
+  },
+  {
+    &quot;bookingid&quot;: 26
+  },
+  {
+    &quot;bookingid&quot;: 48
+  },
+  {
+    &quot;bookingid&quot;: 228
+  },
+  {
+    &quot;bookingid&quot;: 848
+  },
+  {
+    &quot;bookingid&quot;: 160
+  },
+  {
+    &quot;bookingid&quot;: 348
+  },
+  {
+    &quot;bookingid&quot;: 49
+  },
+  {
+    &quot;bookingid&quot;: 364
+  },
+  {
+    &quot;bookingid&quot;: 702
+  },
+  {
+    &quot;bookingid&quot;: 247
+  },
+  {
+    &quot;bookingid&quot;: 128
+  },
+  {
+    &quot;bookingid&quot;: 513
+  },
+  {
+    &quot;bookingid&quot;: 104
+  },
+  {
+    &quot;bookingid&quot;: 408
+  },
+  {
+    &quot;bookingid&quot;: 171
+  },
+  {
+    &quot;bookingid&quot;: 842
+  },
+  {
+    &quot;bookingid&quot;: 696
+  },
+  {
+    &quot;bookingid&quot;: 410
+  },
+  {
+    &quot;bookingid&quot;: 426
+  },
+  {
+    &quot;bookingid&quot;: 46
+  },
+  {
+    &quot;bookingid&quot;: 125
+  },
+  {
+    &quot;bookingid&quot;: 685
+  },
+  {
+    &quot;bookingid&quot;: 245
+  },
+  {
+    &quot;bookingid&quot;: 138
+  },
+  {
+    &quot;bookingid&quot;: 7
+  },
+  {
+    &quot;bookingid&quot;: 330
+  },
+  {
+    &quot;bookingid&quot;: 457
+  },
+  {
+    &quot;bookingid&quot;: 862
+  },
+  {
+    &quot;bookingid&quot;: 17
+  },
+  {
+    &quot;bookingid&quot;: 477
+  },
+  {
+    &quot;bookingid&quot;: 800
+  },
+  {
+    &quot;bookingid&quot;: 763
+  },
+  {
+    &quot;bookingid&quot;: 628
+  },
+  {
+    &quot;bookingid&quot;: 706
+  },
+  {
+    &quot;bookingid&quot;: 735
+  },
+  {
+    &quot;bookingid&quot;: 566
+  },
+  {
+    &quot;bookingid&quot;: 841
+  },
+  {
+    &quot;bookingid&quot;: 234
+  },
+  {
+    &quot;bookingid&quot;: 731
+  },
+  {
+    &quot;bookingid&quot;: 291
+  },
+  {
+    &quot;bookingid&quot;: 777
+  },
+  {
+    &quot;bookingid&quot;: 282
+  },
+  {
+    &quot;bookingid&quot;: 4
+  },
+  {
+    &quot;bookingid&quot;: 365
+  },
+  {
+    &quot;bookingid&quot;: 181
+  },
+  {
+    &quot;bookingid&quot;: 21
+  },
+  {
+    &quot;bookingid&quot;: 889
+  },
+  {
+    &quot;bookingid&quot;: 424
+  },
+  {
+    &quot;bookingid&quot;: 43
+  },
+  {
+    &quot;bookingid&quot;: 31
+  },
+  {
+    &quot;bookingid&quot;: 51
+  },
+  {
+    &quot;bookingid&quot;: 657
+  },
+  {
+    &quot;bookingid&quot;: 901
+  },
+  {
+    &quot;bookingid&quot;: 483
+  },
+  {
+    &quot;bookingid&quot;: 60
+  },
+  {
+    &quot;bookingid&quot;: 708
+  },
+  {
+    &quot;bookingid&quot;: 633
+  },
+  {
+    &quot;bookingid&quot;: 390
+  },
+  {
+    &quot;bookingid&quot;: 741
+  },
+  {
+    &quot;bookingid&quot;: 156
+  },
+  {
+    &quot;bookingid&quot;: 599
+  },
+  {
+    &quot;bookingid&quot;: 823
+  },
+  {
+    &quot;bookingid&quot;: 285
+  },
+  {
+    &quot;bookingid&quot;: 753
+  },
+  {
+    &quot;bookingid&quot;: 11
+  },
+  {
+    &quot;bookingid&quot;: 77
+  },
+  {
+    &quot;bookingid&quot;: 41
+  },
+  {
+    &quot;bookingid&quot;: 308
+  },
+  {
+    &quot;bookingid&quot;: 81
+  },
+  {
+    &quot;bookingid&quot;: 342
+  },
+  {
+    &quot;bookingid&quot;: 864
+  },
+  {
+    &quot;bookingid&quot;: 296
+  },
+  {
+    &quot;bookingid&quot;: 767
+  },
+  {
+    &quot;bookingid&quot;: 822
+  },
+  {
+    &quot;bookingid&quot;: 414
+  },
+  {
+    &quot;bookingid&quot;: 667
+  },
+  {
+    &quot;bookingid&quot;: 78
+  },
+  {
+    &quot;bookingid&quot;: 87
+  },
+  {
+    &quot;bookingid&quot;: 762
+  },
+  {
+    &quot;bookingid&quot;: 3
+  },
+  {
+    &quot;bookingid&quot;: 98
+  },
+  {
+    &quot;bookingid&quot;: 206
+  },
+  {
+    &quot;bookingid&quot;: 665
+  },
+  {
+    &quot;bookingid&quot;: 307
+  },
+  {
+    &quot;bookingid&quot;: 472
+  },
+  {
+    &quot;bookingid&quot;: 831
+  },
+  {
+    &quot;bookingid&quot;: 698
+  },
+  {
+    &quot;bookingid&quot;: 900
+  },
+  {
+    &quot;bookingid&quot;: 44
+  },
+  {
+    &quot;bookingid&quot;: 733
+  },
+  {
+    &quot;bookingid&quot;: 250
+  },
+  {
+    &quot;bookingid&quot;: 133
+  },
+  {
+    &quot;bookingid&quot;: 74
+  },
+  {
+    &quot;bookingid&quot;: 558
+  },
+  {
+    &quot;bookingid&quot;: 846
+  },
+  {
+    &quot;bookingid&quot;: 419
+  },
+  {
+    &quot;bookingid&quot;: 891
+  },
+  {
+    &quot;bookingid&quot;: 640
+  },
+  {
+    &quot;bookingid&quot;: 388
+  },
+  {
+    &quot;bookingid&quot;: 814
+  },
+  {
+    &quot;bookingid&quot;: 280
+  },
+  {
+    &quot;bookingid&quot;: 290
+  },
+  {
+    &quot;bookingid&quot;: 662
+  },
+  {
+    &quot;bookingid&quot;: 750
+  },
+  {
+    &quot;bookingid&quot;: 127
+  },
+  {
+    &quot;bookingid&quot;: 552
+  },
+  {
+    &quot;bookingid&quot;: 532
+  },
+  {
+    &quot;bookingid&quot;: 256
+  },
+  {
+    &quot;bookingid&quot;: 184
+  },
+  {
+    &quot;bookingid&quot;: 195
+  },
+  {
+    &quot;bookingid&quot;: 672
+  },
+  {
+    &quot;bookingid&quot;: 613
+  },
+  {
+    &quot;bookingid&quot;: 537
+  },
+  {
+    &quot;bookingid&quot;: 352
+  },
+  {
+    &quot;bookingid&quot;: 45
+  },
+  {
+    &quot;bookingid&quot;: 179
+  },
+  {
+    &quot;bookingid&quot;: 605
+  },
+  {
+    &quot;bookingid&quot;: 681
+  },
+  {
+    &quot;bookingid&quot;: 386
+  },
+  {
+    &quot;bookingid&quot;: 263
+  },
+  {
+    &quot;bookingid&quot;: 743
+  },
+  {
+    &quot;bookingid&quot;: 215
+  },
+  {
+    &quot;bookingid&quot;: 713
+  },
+  {
+    &quot;bookingid&quot;: 740
+  },
+  {
+    &quot;bookingid&quot;: 442
+  },
+  {
+    &quot;bookingid&quot;: 376
+  },
+  {
+    &quot;bookingid&quot;: 455
+  },
+  {
+    &quot;bookingid&quot;: 569
+  },
+  {
+    &quot;bookingid&quot;: 651
+  },
+  {
+    &quot;bookingid&quot;: 200
+  },
+  {
+    &quot;bookingid&quot;: 701
+  },
+  {
+    &quot;bookingid&quot;: 109
+  },
+  {
+    &quot;bookingid&quot;: 241
+  },
+  {
+    &quot;bookingid&quot;: 561
+  },
+  {
+    &quot;bookingid&quot;: 155
+  },
+  {
+    &quot;bookingid&quot;: 572
+  },
+  {
+    &quot;bookingid&quot;: 273
+  },
+  {
+    &quot;bookingid&quot;: 755
+  },
+  {
+    &quot;bookingid&quot;: 737
+  },
+  {
+    &quot;bookingid&quot;: 108
+  },
+  {
+    &quot;bookingid&quot;: 444
+  },
+  {
+    &quot;bookingid&quot;: 593
+  },
+  {
+    &quot;bookingid&quot;: 236
+  },
+  {
+    &quot;bookingid&quot;: 341
+  },
+  {
+    &quot;bookingid&quot;: 80
+  },
+  {
+    &quot;bookingid&quot;: 510
+  },
+  {
+    &quot;bookingid&quot;: 652
+  },
+  {
+    &quot;bookingid&quot;: 502
+  },
+  {
+    &quot;bookingid&quot;: 105
+  },
+  {
+    &quot;bookingid&quot;: 861
+  },
+  {
+    &quot;bookingid&quot;: 523
+  },
+  {
+    &quot;bookingid&quot;: 603
+  },
+  {
+    &quot;bookingid&quot;: 695
+  },
+  {
+    &quot;bookingid&quot;: 586
+  },
+  {
+    &quot;bookingid&quot;: 689
+  },
+  {
+    &quot;bookingid&quot;: 479
+  },
+  {
+    &quot;bookingid&quot;: 22
+  },
+  {
+    &quot;bookingid&quot;: 738
+  },
+  {
+    &quot;bookingid&quot;: 113
+  },
+  {
+    &quot;bookingid&quot;: 50
+  },
+  {
+    &quot;bookingid&quot;: 790
+  },
+  {
+    &quot;bookingid&quot;: 166
+  },
+  {
+    &quot;bookingid&quot;: 176
+  },
+  {
+    &quot;bookingid&quot;: 690
+  },
+  {
+    &quot;bookingid&quot;: 305
+  },
+  {
+    &quot;bookingid&quot;: 213
+  },
+  {
+    &quot;bookingid&quot;: 867
+  },
+  {
+    &quot;bookingid&quot;: 620
+  },
+  {
+    &quot;bookingid&quot;: 140
+  },
+  {
+    &quot;bookingid&quot;: 143
+  },
+  {
+    &quot;bookingid&quot;: 870
+  },
+  {
+    &quot;bookingid&quot;: 15
+  },
+  {
+    &quot;bookingid&quot;: 503
+  },
+  {
+    &quot;bookingid&quot;: 806
+  },
+  {
+    &quot;bookingid&quot;: 417
+  },
+  {
+    &quot;bookingid&quot;: 680
+  },
+  {
+    &quot;bookingid&quot;: 868
+  },
+  {
+    &quot;bookingid&quot;: 835
+  },
+  {
+    &quot;bookingid&quot;: 358
+  },
+  {
+    &quot;bookingid&quot;: 849
+  },
+  {
+    &quot;bookingid&quot;: 10
+  },
+  {
+    &quot;bookingid&quot;: 579
+  },
+  {
+    &quot;bookingid&quot;: 343
+  },
+  {
+    &quot;bookingid&quot;: 874
+  },
+  {
+    &quot;bookingid&quot;: 28
+  },
+  {
+    &quot;bookingid&quot;: 917
+  },
+  {
+    &quot;bookingid&quot;: 357
+  },
+  {
+    &quot;bookingid&quot;: 316
+  },
+  {
+    &quot;bookingid&quot;: 638
+  },
+  {
+    &quot;bookingid&quot;: 116
+  },
+  {
+    &quot;bookingid&quot;: 436
+  },
+  {
+    &quot;bookingid&quot;: 325
+  },
+  {
+    &quot;bookingid&quot;: 469
+  },
+  {
+    &quot;bookingid&quot;: 899
+  },
+  {
+    &quot;bookingid&quot;: 6
+  },
+  {
+    &quot;bookingid&quot;: 693
+  },
+  {
+    &quot;bookingid&quot;: 465
+  },
+  {
+    &quot;bookingid&quot;: 678
+  },
+  {
+    &quot;bookingid&quot;: 780
+  },
+  {
+    &quot;bookingid&quot;: 367
+  },
+  {
+    &quot;bookingid&quot;: 719
+  },
+  {
+    &quot;bookingid&quot;: 919
+  },
+  {
+    &quot;bookingid&quot;: 539
+  },
+  {
+    &quot;bookingid&quot;: 491
+  },
+  {
+    &quot;bookingid&quot;: 751
+  },
+  {
+    &quot;bookingid&quot;: 289
+  },
+  {
+    &quot;bookingid&quot;: 542
+  },
+  {
+    &quot;bookingid&quot;: 134
+  },
+  {
+    &quot;bookingid&quot;: 906
+  },
+  {
+    &quot;bookingid&quot;: 795
+  },
+  {
+    &quot;bookingid&quot;: 189
+  },
+  {
+    &quot;bookingid&quot;: 313
+  },
+  {
+    &quot;bookingid&quot;: 533
+  },
+  {
+    &quot;bookingid&quot;: 207
+  },
+  {
+    &quot;bookingid&quot;: 434
+  },
+  {
+    &quot;bookingid&quot;: 8
+  },
+  {
+    &quot;bookingid&quot;: 76
+  },
+  {
+    &quot;bookingid&quot;: 182
+  },
+  {
+    &quot;bookingid&quot;: 449
+  },
+  {
+    &quot;bookingid&quot;: 379
+  },
+  {
+    &quot;bookingid&quot;: 387
+  },
+  {
+    &quot;bookingid&quot;: 336
+  },
+  {
+    &quot;bookingid&quot;: 57
+  },
+  {
+    &quot;bookingid&quot;: 1
+  },
+  {
+    &quot;bookingid&quot;: 783
+  },
+  {
+    &quot;bookingid&quot;: 433
+  },
+  {
+    &quot;bookingid&quot;: 310
+  },
+  {
+    &quot;bookingid&quot;: 281
+  },
+  {
+    &quot;bookingid&quot;: 183
+  },
+  {
+    &quot;bookingid&quot;: 53
+  },
+  {
+    &quot;bookingid&quot;: 402
+  },
+  {
+    &quot;bookingid&quot;: 314
+  },
+  {
+    &quot;bookingid&quot;: 459
+  },
+  {
+    &quot;bookingid&quot;: 70
+  },
+  {
+    &quot;bookingid&quot;: 635
+  },
+  {
+    &quot;bookingid&quot;: 531
+  },
+  {
+    &quot;bookingid&quot;: 355
+  },
+  {
+    &quot;bookingid&quot;: 124
+  },
+  {
+    &quot;bookingid&quot;: 368
+  },
+  {
+    &quot;bookingid&quot;: 69
+  },
+  {
+    &quot;bookingid&quot;: 240
+  },
+  {
+    &quot;bookingid&quot;: 654
+  },
+  {
+    &quot;bookingid&quot;: 520
+  },
+  {
+    &quot;bookingid&quot;: 106
+  },
+  {
+    &quot;bookingid&quot;: 524
+  },
+  {
+    &quot;bookingid&quot;: 448
+  },
+  {
+    &quot;bookingid&quot;: 295
+  },
+  {
+    &quot;bookingid&quot;: 570
+  },
+  {
+    &quot;bookingid&quot;: 346
+  },
+  {
+    &quot;bookingid&quot;: 544
+  },
+  {
+    &quot;bookingid&quot;: 54
+  },
+  {
+    &quot;bookingid&quot;: 119
+  },
+  {
+    &quot;bookingid&quot;: 56
+  },
+  {
+    &quot;bookingid&quot;: 623
+  },
+  {
+    &quot;bookingid&quot;: 847
+  },
+  {
+    &quot;bookingid&quot;: 63
+  },
+  {
+    &quot;bookingid&quot;: 302
+  },
+  {
+    &quot;bookingid&quot;: 339
+  },
+  {
+    &quot;bookingid&quot;: 326
+  },
+  {
+    &quot;bookingid&quot;: 65
+  },
+  {
+    &quot;bookingid&quot;: 911
+  },
+  {
+    &quot;bookingid&quot;: 83
+  },
+  {
+    &quot;bookingid&quot;: 270
+  },
+  {
+    &quot;bookingid&quot;: 594
+  },
+  {
+    &quot;bookingid&quot;: 920
+  },
+  {
+    &quot;bookingid&quot;: 27
+  },
+  {
+    &quot;bookingid&quot;: 415
+  },
+  {
+    &quot;bookingid&quot;: 224
+  },
+  {
+    &quot;bookingid&quot;: 721
+  },
+  {
+    &quot;bookingid&quot;: 749
+  },
+  {
+    &quot;bookingid&quot;: 591
+  },
+  {
+    &quot;bookingid&quot;: 775
+  },
+  {
+    &quot;bookingid&quot;: 687
+  },
+  {
+    &quot;bookingid&quot;: 700
+  },
+  {
+    &quot;bookingid&quot;: 902
+  },
+  {
+    &quot;bookingid&quot;: 912
+  },
+  {
+    &quot;bookingid&quot;: 258
+  },
+  {
+    &quot;bookingid&quot;: 918
+  },
+  {
+    &quot;bookingid&quot;: 802
+  },
+  {
+    &quot;bookingid&quot;: 328
+  },
+  {
+    &quot;bookingid&quot;: 493
+  },
+  {
+    &quot;bookingid&quot;: 190
+  },
+  {
+    &quot;bookingid&quot;: 916
+  },
+  {
+    &quot;bookingid&quot;: 684
+  },
+  {
+    &quot;bookingid&quot;: 528
+  },
+  {
+    &quot;bookingid&quot;: 779
+  },
+  {
+    &quot;bookingid&quot;: 815
+  },
+  {
+    &quot;bookingid&quot;: 908
+  },
+  {
+    &quot;bookingid&quot;: 495
+  },
+  {
+    &quot;bookingid&quot;: 460
+  },
+  {
+    &quot;bookingid&quot;: 526
+  },
+  {
+    &quot;bookingid&quot;: 497
+  },
+  {
+    &quot;bookingid&quot;: 799
+  },
+  {
+    &quot;bookingid&quot;: 271
+  },
+  {
+    &quot;bookingid&quot;: 2
+  },
+  {
+    &quot;bookingid&quot;: 33
+  },
+  {
+    &quot;bookingid&quot;: 149
+  },
+  {
+    &quot;bookingid&quot;: 798
+  },
+  {
+    &quot;bookingid&quot;: 71
+  },
+  {
+    &quot;bookingid&quot;: 173
+  },
+  {
+    &quot;bookingid&quot;: 792
+  },
+  {
+    &quot;bookingid&quot;: 197
+  },
+  {
+    &quot;bookingid&quot;: 123
+  },
+  {
+    &quot;bookingid&quot;: 818
+  },
+  {
+    &quot;bookingid&quot;: 9
+  },
+  {
+    &quot;bookingid&quot;: 710
+  },
+  {
+    &quot;bookingid&quot;: 805
+  },
+  {
+    &quot;bookingid&quot;: 825
+  },
+  {
+    &quot;bookingid&quot;: 545
+  },
+  {
+    &quot;bookingid&quot;: 574
+  },
+  {
+    &quot;bookingid&quot;: 220
+  },
+  {
+    &quot;bookingid&quot;: 648
+  },
+  {
+    &quot;bookingid&quot;: 869
+  },
+  {
+    &quot;bookingid&quot;: 322
+  },
+  {
+    &quot;bookingid&quot;: 12
+  },
+  {
+    &quot;bookingid&quot;: 717
+  },
+  {
+    &quot;bookingid&quot;: 42
+  },
+  {
+    &quot;bookingid&quot;: 892
+  },
+  {
+    &quot;bookingid&quot;: 254
+  },
+  {
+    &quot;bookingid&quot;: 451
+  },
+  {
+    &quot;bookingid&quot;: 142
+  },
+  {
+    &quot;bookingid&quot;: 617
+  },
+  {
+    &quot;bookingid&quot;: 727
+  },
+  {
+    &quot;bookingid&quot;: 337
+  },
+  {
+    &quot;bookingid&quot;: 688
+  },
+  {
+    &quot;bookingid&quot;: 656
+  },
+  {
+    &quot;bookingid&quot;: 167
+  },
+  {
+    &quot;bookingid&quot;: 907
+  },
+  {
+    &quot;bookingid&quot;: 335
+  },
+  {
+    &quot;bookingid&quot;: 430
+  },
+  {
+    &quot;bookingid&quot;: 198
+  },
+  {
+    &quot;bookingid&quot;: 298
+  },
+  {
+    &quot;bookingid&quot;: 529
+  },
+  {
+    &quot;bookingid&quot;: 863
+  },
+  {
+    &quot;bookingid&quot;: 588
+  },
+  {
+    &quot;bookingid&quot;: 644
+  },
+  {
+    &quot;bookingid&quot;: 478
+  },
+  {
+    &quot;bookingid&quot;: 768
+  },
+  {
+    &quot;bookingid&quot;: 808
+  },
+  {
+    &quot;bookingid&quot;: 489
+  },
+  {
+    &quot;bookingid&quot;: 824
+  },
+  {
+    &quot;bookingid&quot;: 923
+  },
+  {
+    &quot;bookingid&quot;: 121
+  },
+  {
+    &quot;bookingid&quot;: 383
+  },
+  {
+    &quot;bookingid&quot;: 487
+  },
+  {
+    &quot;bookingid&quot;: 646
+  },
+  {
+    &quot;bookingid&quot;: 563
+  },
+  {
+    &quot;bookingid&quot;: 403
+  },
+  {
+    &quot;bookingid&quot;: 25
+  },
+  {
+    &quot;bookingid&quot;: 331
+  },
+  {
+    &quot;bookingid&quot;: 507
+  },
+  {
+    &quot;bookingid&quot;: 496
+  },
+  {
+    &quot;bookingid&quot;: 427
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:25]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:25]</span>
+                <span class="scenario-name">Create Booking Validation</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1873</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:25]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://restful-booker.herokuapp.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/auth&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.5">{
+&quot;username&quot; : &quot;admin&quot;,
+&quot;password&quot; : &quot;password123&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">897</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">18:43:08.553 request:
+1 &gt; POST https://restful-booker.herokuapp.com/auth
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 45
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;password123&quot;}
+
+18:43:09.441 response time in milliseconds: 886
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1711890789&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=4Zzscj9fPp%2BZv9GsIODkBiyDKJUbDBA3F0QDFv5SXDs%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1711890789&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=4Zzscj9fPp%2BZv9GsIODkBiyDKJUbDBA3F0QDFv5SXDs%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 27
+1 &lt; Etag: W/&quot;1b-tkiBYfbv+bT/etf3R92W2ac41ns&quot;
+1 &lt; Date: Sun, 31 Mar 2024 13:13:09 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;token&quot;:&quot;d613ee66dcc0372&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenValue = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;value of the token is &#39;+ tokenValue</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.16">18:43:09.451 [print] value of the token is d613ee66dcc0372 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def BookingId = 0</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/booking&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.29">{
+    &quot;firstname&quot; : &quot;Pushpendra&quot;,
+    &quot;lastname&quot; : &quot;Singh&quot;,
+    &quot;totalprice&quot; : 2222,
+    &quot;depositpaid&quot; : true,
+    &quot;bookingdates&quot; : {
+        &quot;checkin&quot; : &quot;2018-01-01&quot;,
+        &quot;checkout&quot; : &quot;2019-01-01&quot;
+    },
+    &quot;additionalneeds&quot; : &quot;Breakfast&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">865</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.43">18:43:09.460 request:
+2 &gt; POST https://restful-booker.herokuapp.com/booking
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Accept: application/json
+2 &gt; Content-Length: 176
+2 &gt; Host: restful-booker.herokuapp.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;firstname&quot;:&quot;Pushpendra&quot;,&quot;lastname&quot;:&quot;Singh&quot;,&quot;totalprice&quot;:2222,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;additionalneeds&quot;:&quot;Breakfast&quot;}
+
+18:43:10.319 response time in milliseconds: 856
+2 &lt; 200
+2 &lt; Server: Cowboy
+2 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1711890790&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=Q9OVMdfedk3XVKVVXY8DRgrkQmq5ZQugAaqA7UBlT2k%3D&quot;}]}
+2 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1711890790&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=Q9OVMdfedk3XVKVVXY8DRgrkQmq5ZQugAaqA7UBlT2k%3D
+2 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 204
+2 &lt; Etag: W/&quot;cc-YtESQI5GkYdvAuXW4+w441qYGdQ&quot;
+2 &lt; Date: Sun, 31 Mar 2024 13:13:10 GMT
+2 &lt; Via: 1.1 vegur
+{&quot;bookingid&quot;:952,&quot;booking&quot;:{&quot;firstname&quot;:&quot;Pushpendra&quot;,&quot;lastname&quot;:&quot;Singh&quot;,&quot;totalprice&quot;:2222,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;additionalneeds&quot;:&quot;Breakfast&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def BookingId = response.bookingid</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print BookingId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.46">18:43:10.332 [print] 952 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.47">18:43:10.334 [print] {
+  &quot;bookingid&quot;: 952,
+  &quot;booking&quot;: {
+    &quot;firstname&quot;: &quot;Pushpendra&quot;,
+    &quot;lastname&quot;: &quot;Singh&quot;,
+    &quot;totalprice&quot;: 2222,
+    &quot;depositpaid&quot;: true,
+    &quot;bookingdates&quot;: {
+      &quot;checkin&quot;: &quot;2018-01-01&quot;,
+      &quot;checkout&quot;: &quot;2019-01-01&quot;
+    },
+    &quot;additionalneeds&quot;: &quot;Breakfast&quot;
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.booking.firstname == &#39;Pushpendra&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">83</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.booking.lastname == &#39;Singh&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:51]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:51]</span>
+                <span class="scenario-name">Getting single booking</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1788</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:51]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:51]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://restful-booker.herokuapp.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:51]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/auth&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:51]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.5">{
+&quot;username&quot; : &quot;admin&quot;,
+&quot;password&quot; : &quot;password123&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:51]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:51]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">858</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">18:43:10.436 request:
+1 &gt; POST https://restful-booker.herokuapp.com/auth
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 45
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;password123&quot;}
+
+18:43:11.287 response time in milliseconds: 848
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1711890791&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=RF5kJ0Vs%2FIwErJXeNOunKlvUa5Cd0Jvp6w2Ty4dT%2BJI%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1711890791&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=RF5kJ0Vs%2FIwErJXeNOunKlvUa5Cd0Jvp6w2Ty4dT%2BJI%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 27
+1 &lt; Etag: W/&quot;1b-2QIcICJSPHnuYd28rmi7VoqHGZQ&quot;
+1 &lt; Date: Sun, 31 Mar 2024 13:13:11 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;token&quot;:&quot;85bebcfcc079b90&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:51]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:51]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenValue = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:51]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;value of the token is &#39;+ tokenValue</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.16">18:43:11.294 [print] value of the token is 85bebcfcc079b90 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:51]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def BookingId = 0</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/booking/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref passed">53</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path BookingId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">901</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.55">18:43:11.303 request:
+2 &gt; GET https://restful-booker.herokuapp.com/booking/0
+2 &gt; Accept: application/json
+2 &gt; Host: restful-booker.herokuapp.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+18:43:12.200 response time in milliseconds: 895
+2 &lt; 404
+2 &lt; Server: Cowboy
+2 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1711890792&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=AXiIauGgisZe%2BE%2FElx9chGEG6B1uPNQ4ov%2Fhx3vpUR8%3D&quot;}]}
+2 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1711890792&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=AXiIauGgisZe%2BE%2FElx9chGEG6B1uPNQ4ov%2Fhx3vpUR8%3D
+2 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Content-Type: text/plain; charset=utf-8
+2 &lt; Content-Length: 9
+2 &lt; Etag: W/&quot;9-0gXL1ngzMqISxa6S1zx3F4wtLyg&quot;
+2 &lt; Date: Sun, 31 Mar 2024 13:13:12 GMT
+2 &lt; Via: 1.1 vegur
+Not Found
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref failed">56</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">21</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.56">18:43:12.270 src/test/Features/ApiAssignment.feature:56
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 895, url: https://restful-booker.herokuapp.com/booking/0, response: 
+Not Found
+src/test/Features/ApiAssignment.feature:56
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.57">
+      <div class="step-ref skipped">57</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def userFirstName = response.firstname</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.58">
+      <div class="step-ref skipped">58</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def userLastName = response.lastname</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.59">
+      <div class="step-ref skipped">59</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print userFirstName + userLastName</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:63]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:63]</span>
+                <span class="scenario-name">Update Booking Validation</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1803</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:63]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:63]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://restful-booker.herokuapp.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:63]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/auth&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:63]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.5">{
+&quot;username&quot; : &quot;admin&quot;,
+&quot;password&quot; : &quot;password123&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:63]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:63]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">925</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">18:43:12.308 request:
+1 &gt; POST https://restful-booker.herokuapp.com/auth
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 45
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;password123&quot;}
+
+18:43:13.227 response time in milliseconds: 912
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1711890793&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=0s0WljbLbkjhvxQW3BiZisxvP078BDujJBQZVNB9Tfw%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1711890793&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=0s0WljbLbkjhvxQW3BiZisxvP078BDujJBQZVNB9Tfw%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 27
+1 &lt; Etag: W/&quot;1b-sqWhJBcPVNyfFfJIu/t/zFBzKP8&quot;
+1 &lt; Date: Sun, 31 Mar 2024 13:13:13 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;token&quot;:&quot;cb2dfd06a24390c&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:63]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:63]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenValue = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:63]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;value of the token is &#39;+ tokenValue</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.16">18:43:13.231 [print] value of the token is cb2dfd06a24390c 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:63]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def BookingId = 0</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.65">
+      <div class="step-ref passed">65</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/booking/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.66">
+      <div class="step-ref passed">66</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path BookingId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.67">
+      <div class="step-ref passed">67</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.68">
+      <div class="step-ref passed">68</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.69">
+      <div class="step-ref passed">69</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Cookie = &#39;token=&#39;+tokenValue</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.70">
+      <div class="step-ref passed">70</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def payload =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.70">{
+&quot;firstname&quot; : &quot;Pushpendra&quot;,
+    &quot;lastname&quot; : &quot;singh&quot;,
+    &quot;totalprice&quot; : 1021,
+    &quot;depositpaid&quot; : true,
+    &quot;bookingdates&quot; : {
+&quot;checkin&quot; : &quot;2018-01-01&quot;,
+&quot;checkout&quot; : &quot;2019-01-01&quot;
+    },
+    &quot;additionalneeds&quot; : &quot;lunch&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.84">
+      <div class="step-ref passed">84</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request payload</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.85">
+      <div class="step-ref passed">85</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">864</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.85">18:43:13.245 request:
+2 &gt; PUT https://restful-booker.herokuapp.com/booking/0
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Accept: application/json
+2 &gt; Cookie: token=cb2dfd06a24390c
+2 &gt; Content-Length: 172
+2 &gt; Host: restful-booker.herokuapp.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;firstname&quot;:&quot;Pushpendra&quot;,&quot;lastname&quot;:&quot;singh&quot;,&quot;totalprice&quot;:1021,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;additionalneeds&quot;:&quot;lunch&quot;}
+
+18:43:14.104 response time in milliseconds: 857
+2 &lt; 405
+2 &lt; Server: Cowboy
+2 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1711890793&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=0s0WljbLbkjhvxQW3BiZisxvP078BDujJBQZVNB9Tfw%3D&quot;}]}
+2 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1711890793&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=0s0WljbLbkjhvxQW3BiZisxvP078BDujJBQZVNB9Tfw%3D
+2 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Content-Type: text/plain; charset=utf-8
+2 &lt; Content-Length: 18
+2 &lt; Etag: W/&quot;12-UGJMK66P4abaBlq0vKHJaCKuGCA&quot;
+2 &lt; Date: Sun, 31 Mar 2024 13:13:13 GMT
+2 &lt; Via: 1.1 vegur
+Method Not Allowed
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.86">
+      <div class="step-ref failed">86</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.86">18:43:14.107 src/test/Features/ApiAssignment.feature:86
+Then status 200
+status code was: 405, expected: 200, response time in milliseconds: 857, url: https://restful-booker.herokuapp.com/booking/0, response: 
+Method Not Allowed
+src/test/Features/ApiAssignment.feature:86
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.87">
+      <div class="step-ref skipped">87</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.88">
+      <div class="step-ref skipped">88</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print response.additionalneeds</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.89">
+      <div class="step-ref skipped">89</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>match response.additionalneeds == &#39;lunch&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:91]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:91]</span>
+                <span class="scenario-name">Partially updating the booking details</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1725</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:91]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:91]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://restful-booker.herokuapp.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:91]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/auth&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:91]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.5">{
+&quot;username&quot; : &quot;admin&quot;,
+&quot;password&quot; : &quot;password123&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:91]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:91]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">868</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">18:43:14.138 request:
+1 &gt; POST https://restful-booker.herokuapp.com/auth
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 45
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;password123&quot;}
+
+18:43:14.999 response time in milliseconds: 859
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1711890794&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=CTnxqNQqlLNIO5POZI3IGkEpIvrAAO6OnCTxw2UUulo%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1711890794&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=CTnxqNQqlLNIO5POZI3IGkEpIvrAAO6OnCTxw2UUulo%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 27
+1 &lt; Etag: W/&quot;1b-fpvKHDLU3j06OSzCw0rI0QzX6Hg&quot;
+1 &lt; Date: Sun, 31 Mar 2024 13:13:14 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;token&quot;:&quot;d0ad1d19d4e473a&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:91]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:91]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenValue = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:91]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;value of the token is &#39;+ tokenValue</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.16">18:43:15.003 [print] value of the token is d0ad1d19d4e473a 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:91]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def BookingId = 0</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.92">
+      <div class="step-ref passed">92</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/booking/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.93">
+      <div class="step-ref passed">93</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path BookingId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.94">
+      <div class="step-ref passed">94</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.95">
+      <div class="step-ref passed">95</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.96">
+      <div class="step-ref passed">96</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Cookie = &#39;token=&#39;+tokenValue</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.97">
+      <div class="step-ref passed">97</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.97">{
+    &quot;firstname&quot; : &quot;Rishabh&quot;,
+    &quot;lastname&quot; : &quot;Singh&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.104">
+      <div class="step-ref passed">104</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method patch</span>
+      </div>
+    </div>
+    <div class="time-cell passed">844</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.104">18:43:15.013 request:
+2 &gt; PATCH https://restful-booker.herokuapp.com/booking/0
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Accept: application/json
+2 &gt; Cookie: token=d0ad1d19d4e473a
+2 &gt; Content-Length: 42
+2 &gt; Host: restful-booker.herokuapp.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;firstname&quot;:&quot;Rishabh&quot;,&quot;lastname&quot;:&quot;Singh&quot;}
+
+18:43:15.852 response time in milliseconds: 837
+2 &lt; 405
+2 &lt; Server: Cowboy
+2 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1711890795&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=83GAyihc8Plnc%2FPAl7d5ijZNfoCAi37%2FMnOA4vor0tQ%3D&quot;}]}
+2 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1711890795&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=83GAyihc8Plnc%2FPAl7d5ijZNfoCAi37%2FMnOA4vor0tQ%3D
+2 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Content-Type: text/plain; charset=utf-8
+2 &lt; Content-Length: 18
+2 &lt; Etag: W/&quot;12-UGJMK66P4abaBlq0vKHJaCKuGCA&quot;
+2 &lt; Date: Sun, 31 Mar 2024 13:13:15 GMT
+2 &lt; Via: 1.1 vegur
+Method Not Allowed
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.105">
+      <div class="step-ref failed">105</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.105">18:43:15.855 src/test/Features/ApiAssignment.feature:105
+Then status 200
+status code was: 405, expected: 200, response time in milliseconds: 837, url: https://restful-booker.herokuapp.com/booking/0, response: 
+Method Not Allowed
+src/test/Features/ApiAssignment.feature:105
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.106">
+      <div class="step-ref skipped">106</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.107">
+      <div class="step-ref skipped">107</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>match response.firstname == &#39;Rishabh&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:109]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:109]</span>
+                <span class="scenario-name">Booking deletion validation</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1754</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:109]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:109]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://restful-booker.herokuapp.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:109]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/auth&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:109]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.5">{
+&quot;username&quot; : &quot;admin&quot;,
+&quot;password&quot; : &quot;password123&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:109]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:109]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">857</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">18:43:15.877 request:
+1 &gt; POST https://restful-booker.herokuapp.com/auth
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 45
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;password123&quot;}
+
+18:43:16.728 response time in milliseconds: 850
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1711890796&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=vEXCKVzw5CJbpYkAfD%2BURYP8a1zwAskgEbsP7E57SsI%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1711890796&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=vEXCKVzw5CJbpYkAfD%2BURYP8a1zwAskgEbsP7E57SsI%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 27
+1 &lt; Etag: W/&quot;1b-K4K8p+ZpTKTuzNdJkVBt2GMvaeY&quot;
+1 &lt; Date: Sun, 31 Mar 2024 13:13:16 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;token&quot;:&quot;faae112391eb3ef&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:109]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:109]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenValue = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:109]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;value of the token is &#39;+ tokenValue</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.16">18:43:16.733 [print] value of the token is faae112391eb3ef 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:109]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def BookingId = 0</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.110">
+      <div class="step-ref passed">110</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/booking/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.111">
+      <div class="step-ref passed">111</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path BookingId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.112">
+      <div class="step-ref passed">112</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.113">
+      <div class="step-ref passed">113</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Cookie = &#39;token=&#39;+tokenValue</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.114">
+      <div class="step-ref passed">114</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">886</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.114">18:43:16.746 request:
+2 &gt; DELETE https://restful-booker.herokuapp.com/booking/0
+2 &gt; Content-Type: application/json
+2 &gt; Cookie: token=faae112391eb3ef
+2 &gt; Host: restful-booker.herokuapp.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+18:43:17.626 response time in milliseconds: 874
+2 &lt; 405
+2 &lt; Server: Cowboy
+2 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1711890797&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=NeZgafTH%2BLMlGuefh89LaglYnX5wBmQjaOjSamYQeVc%3D&quot;}]}
+2 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1711890797&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=NeZgafTH%2BLMlGuefh89LaglYnX5wBmQjaOjSamYQeVc%3D
+2 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Content-Type: text/plain; charset=utf-8
+2 &lt; Content-Length: 18
+2 &lt; Etag: W/&quot;12-UGJMK66P4abaBlq0vKHJaCKuGCA&quot;
+2 &lt; Date: Sun, 31 Mar 2024 13:13:17 GMT
+2 &lt; Via: 1.1 vegur
+Method Not Allowed
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.115">
+      <div class="step-ref failed">115</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.115">18:43:17.628 src/test/Features/ApiAssignment.feature:115
+Then status 201
+status code was: 405, expected: 201, response time in milliseconds: 874, url: https://restful-booker.herokuapp.com/booking/0, response: 
+Method Not Allowed
+src/test/Features/ApiAssignment.feature:115
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,3984 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("14c54fba-6513-4d96-a454-6f984724ccd7",{name:"Pushpendra Singh"});
+    posthog.capture("report_feature",{karate_version:"1.4.0.RC3",karate_meta:null});
+  }
+});
+</script>
+
+    <title>src.test.Features.ApiAssignment</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">4</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-03-31 05:51:58 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:18]"><span>[1:18]</span> <span>Getting all the booking id&#39;s</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:24]"><span>[2:24]</span> <span>Create Booking Validation</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[3:50]"><span>[3:50]</span> <span>Getting single booking</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4:62]"><span>[4:62]</span> <span>Update Booking Validation</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[5:90]"><span>[5:90]</span> <span>Partially updating the booking details</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[6:108]"><span>[6:108]</span> <span>Booking deletion validation</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/Features/ApiAssignment.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">End to End Api testing feature</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:18]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:18]</span>
+                <span class="scenario-name">Getting all the booking id&#39;s</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>13979</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:18]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:18]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://restful-booker.herokuapp.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">143</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:18]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/auth&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:18]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">64</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.5">{
+&quot;username&quot; : &quot;admin&quot;,
+&quot;password&quot; : &quot;password123&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:18]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:18]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">12784</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">17:51:39.988 request:
+1 &gt; POST https://restful-booker.herokuapp.com/auth
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 45
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;password123&quot;}
+
+17:51:52.139 response time in milliseconds: 12144
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1711887711&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=gUM5B1UjwRE%2BI8YN8N7SO3mkzMB%2FouB8%2Fdt0Wnkqi7k%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1711887711&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=gUM5B1UjwRE%2BI8YN8N7SO3mkzMB%2FouB8%2Fdt0Wnkqi7k%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 27
+1 &lt; Etag: W/&quot;1b-hNRittP5wU2dreVgfF+KmeJVPq0&quot;
+1 &lt; Date: Sun, 31 Mar 2024 12:21:51 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;token&quot;:&quot;8220a4a6653bedd&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:18]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:18]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenValue = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">49</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:18]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;value of the token is &#39;+ tokenValue</span>
+      </div>
+    </div>
+    <div class="time-cell passed">71</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.16">17:51:52.265 [print] value of the token is 8220a4a6653bedd 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/booking&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">856</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">17:51:52.269 request:
+2 &gt; GET https://restful-booker.herokuapp.com/booking
+2 &gt; Host: restful-booker.herokuapp.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+17:51:53.118 response time in milliseconds: 848
+2 &lt; 200
+2 &lt; Server: Cowboy
+2 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1711887712&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=W2cEW2GDV%2F7TB88tpWkUhhCiuOF4lBD3sYk18mNUkmI%3D&quot;}]}
+2 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1711887712&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=W2cEW2GDV%2F7TB88tpWkUhhCiuOF4lBD3sYk18mNUkmI%3D
+2 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 3727
+2 &lt; Etag: W/&quot;e8f-yuq76sEoXj/SdwrVm1Botu4hljQ&quot;
+2 &lt; Date: Sun, 31 Mar 2024 12:21:52 GMT
+2 &lt; Via: 1.1 vegur
+[{&quot;bookingid&quot;:13},{&quot;bookingid&quot;:109},{&quot;bookingid&quot;:5},{&quot;bookingid&quot;:128},{&quot;bookingid&quot;:72},{&quot;bookingid&quot;:39},{&quot;bookingid&quot;:138},{&quot;bookingid&quot;:236},{&quot;bookingid&quot;:234},{&quot;bookingid&quot;:6},{&quot;bookingid&quot;:77},{&quot;bookingid&quot;:50},{&quot;bookingid&quot;:139},{&quot;bookingid&quot;:17},{&quot;bookingid&quot;:57},{&quot;bookingid&quot;:97},{&quot;bookingid&quot;:108},{&quot;bookingid&quot;:227},{&quot;bookingid&quot;:96},{&quot;bookingid&quot;:164},{&quot;bookingid&quot;:172},{&quot;bookingid&quot;:212},{&quot;bookingid&quot;:119},{&quot;bookingid&quot;:197},{&quot;bookingid&quot;:150},{&quot;bookingid&quot;:105},{&quot;bookingid&quot;:14},{&quot;bookingid&quot;:79},{&quot;bookingid&quot;:90},{&quot;bookingid&quot;:167},{&quot;bookingid&quot;:151},{&quot;bookingid&quot;:160},{&quot;bookingid&quot;:220},{&quot;bookingid&quot;:46},{&quot;bookingid&quot;:92},{&quot;bookingid&quot;:8},{&quot;bookingid&quot;:258},{&quot;bookingid&quot;:66},{&quot;bookingid&quot;:24},{&quot;bookingid&quot;:144},{&quot;bookingid&quot;:228},{&quot;bookingid&quot;:82},{&quot;bookingid&quot;:171},{&quot;bookingid&quot;:51},{&quot;bookingid&quot;:43},{&quot;bookingid&quot;:41},{&quot;bookingid&quot;:264},{&quot;bookingid&quot;:262},{&quot;bookingid&quot;:290},{&quot;bookingid&quot;:145},{&quot;bookingid&quot;:232},{&quot;bookingid&quot;:9},{&quot;bookingid&quot;:93},{&quot;bookingid&quot;:114},{&quot;bookingid&quot;:281},{&quot;bookingid&quot;:42},{&quot;bookingid&quot;:126},{&quot;bookingid&quot;:140},{&quot;bookingid&quot;:270},{&quot;bookingid&quot;:121},{&quot;bookingid&quot;:218},{&quot;bookingid&quot;:163},{&quot;bookingid&quot;:45},{&quot;bookingid&quot;:263},{&quot;bookingid&quot;:249},{&quot;bookingid&quot;:186},{&quot;bookingid&quot;:71},{&quot;bookingid&quot;:235},{&quot;bookingid&quot;:255},{&quot;bookingid&quot;:112},{&quot;bookingid&quot;:149},{&quot;bookingid&quot;:179},{&quot;bookingid&quot;:84},{&quot;bookingid&quot;:122},{&quot;bookingid&quot;:16},{&quot;bookingid&quot;:102},{&quot;bookingid&quot;:143},{&quot;bookingid&quot;:52},{&quot;bookingid&quot;:213},{&quot;bookingid&quot;:265},{&quot;bookingid&quot;:4},{&quot;bookingid&quot;:54},{&quot;bookingid&quot;:280},{&quot;bookingid&quot;:211},{&quot;bookingid&quot;:135},{&quot;bookingid&quot;:100},{&quot;bookingid&quot;:267},{&quot;bookingid&quot;:11},{&quot;bookingid&quot;:286},{&quot;bookingid&quot;:132},{&quot;bookingid&quot;:3},{&quot;bookingid&quot;:87},{&quot;bookingid&quot;:32},{&quot;bookingid&quot;:169},{&quot;bookingid&quot;:282},{&quot;bookingid&quot;:173},{&quot;bookingid&quot;:29},{&quot;bookingid&quot;:245},{&quot;bookingid&quot;:120},{&quot;bookingid&quot;:206},{&quot;bookingid&quot;:254},{&quot;bookingid&quot;:48},{&quot;bookingid&quot;:91},{&quot;bookingid&quot;:27},{&quot;bookingid&quot;:67},{&quot;bookingid&quot;:272},{&quot;bookingid&quot;:55},{&quot;bookingid&quot;:193},{&quot;bookingid&quot;:230},{&quot;bookingid&quot;:117},{&quot;bookingid&quot;:124},{&quot;bookingid&quot;:141},{&quot;bookingid&quot;:195},{&quot;bookingid&quot;:243},{&quot;bookingid&quot;:241},{&quot;bookingid&quot;:242},{&quot;bookingid&quot;:38},{&quot;bookingid&quot;:203},{&quot;bookingid&quot;:88},{&quot;bookingid&quot;:157},{&quot;bookingid&quot;:83},{&quot;bookingid&quot;:233},{&quot;bookingid&quot;:191},{&quot;bookingid&quot;:21},{&quot;bookingid&quot;:276},{&quot;bookingid&quot;:152},{&quot;bookingid&quot;:49},{&quot;bookingid&quot;:201},{&quot;bookingid&quot;:34},{&quot;bookingid&quot;:287},{&quot;bookingid&quot;:64},{&quot;bookingid&quot;:246},{&quot;bookingid&quot;:277},{&quot;bookingid&quot;:194},{&quot;bookingid&quot;:81},{&quot;bookingid&quot;:44},{&quot;bookingid&quot;:239},{&quot;bookingid&quot;:18},{&quot;bookingid&quot;:192},{&quot;bookingid&quot;:99},{&quot;bookingid&quot;:177},{&quot;bookingid&quot;:200},{&quot;bookingid&quot;:7},{&quot;bookingid&quot;:30},{&quot;bookingid&quot;:231},{&quot;bookingid&quot;:178},{&quot;bookingid&quot;:25},{&quot;bookingid&quot;:165},{&quot;bookingid&quot;:106},{&quot;bookingid&quot;:31},{&quot;bookingid&quot;:202},{&quot;bookingid&quot;:158},{&quot;bookingid&quot;:237},{&quot;bookingid&quot;:131},{&quot;bookingid&quot;:58},{&quot;bookingid&quot;:253},{&quot;bookingid&quot;:37},{&quot;bookingid&quot;:123},{&quot;bookingid&quot;:271},{&quot;bookingid&quot;:36},{&quot;bookingid&quot;:74},{&quot;bookingid&quot;:116},{&quot;bookingid&quot;:185},{&quot;bookingid&quot;:183},{&quot;bookingid&quot;:75},{&quot;bookingid&quot;:257},{&quot;bookingid&quot;:223},{&quot;bookingid&quot;:208},{&quot;bookingid&quot;:274},{&quot;bookingid&quot;:115},{&quot;bookingid&quot;:162},{&quot;bookingid&quot;:60},{&quot;bookingid&quot;:12},{&quot;bookingid&quot;:219},{&quot;bookingid&quot;:59},{&quot;bookingid&quot;:181},{&quot;bookingid&quot;:278},{&quot;bookingid&quot;:20},{&quot;bookingid&quot;:261},{&quot;bookingid&quot;:35},{&quot;bookingid&quot;:68},{&quot;bookingid&quot;:248},{&quot;bookingid&quot;:130},{&quot;bookingid&quot;:156},{&quot;bookingid&quot;:15},{&quot;bookingid&quot;:78},{&quot;bookingid&quot;:22},{&quot;bookingid&quot;:182},{&quot;bookingid&quot;:210},{&quot;bookingid&quot;:284},{&quot;bookingid&quot;:215},{&quot;bookingid&quot;:26},{&quot;bookingid&quot;:174},{&quot;bookingid&quot;:204},{&quot;bookingid&quot;:289},{&quot;bookingid&quot;:23},{&quot;bookingid&quot;:155},{&quot;bookingid&quot;:101},{&quot;bookingid&quot;:221},{&quot;bookingid&quot;:133},{&quot;bookingid&quot;:63},{&quot;bookingid&quot;:33},{&quot;bookingid&quot;:65},{&quot;bookingid&quot;:110},{&quot;bookingid&quot;:188},{&quot;bookingid&quot;:10},{&quot;bookingid&quot;:137},{&quot;bookingid&quot;:224},{&quot;bookingid&quot;:1},{&quot;bookingid&quot;:2},{&quot;bookingid&quot;:62},{&quot;bookingid&quot;:247}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.22">17:51:53.132 [print] [
+  {
+    &quot;bookingid&quot;: 13
+  },
+  {
+    &quot;bookingid&quot;: 109
+  },
+  {
+    &quot;bookingid&quot;: 5
+  },
+  {
+    &quot;bookingid&quot;: 128
+  },
+  {
+    &quot;bookingid&quot;: 72
+  },
+  {
+    &quot;bookingid&quot;: 39
+  },
+  {
+    &quot;bookingid&quot;: 138
+  },
+  {
+    &quot;bookingid&quot;: 236
+  },
+  {
+    &quot;bookingid&quot;: 234
+  },
+  {
+    &quot;bookingid&quot;: 6
+  },
+  {
+    &quot;bookingid&quot;: 77
+  },
+  {
+    &quot;bookingid&quot;: 50
+  },
+  {
+    &quot;bookingid&quot;: 139
+  },
+  {
+    &quot;bookingid&quot;: 17
+  },
+  {
+    &quot;bookingid&quot;: 57
+  },
+  {
+    &quot;bookingid&quot;: 97
+  },
+  {
+    &quot;bookingid&quot;: 108
+  },
+  {
+    &quot;bookingid&quot;: 227
+  },
+  {
+    &quot;bookingid&quot;: 96
+  },
+  {
+    &quot;bookingid&quot;: 164
+  },
+  {
+    &quot;bookingid&quot;: 172
+  },
+  {
+    &quot;bookingid&quot;: 212
+  },
+  {
+    &quot;bookingid&quot;: 119
+  },
+  {
+    &quot;bookingid&quot;: 197
+  },
+  {
+    &quot;bookingid&quot;: 150
+  },
+  {
+    &quot;bookingid&quot;: 105
+  },
+  {
+    &quot;bookingid&quot;: 14
+  },
+  {
+    &quot;bookingid&quot;: 79
+  },
+  {
+    &quot;bookingid&quot;: 90
+  },
+  {
+    &quot;bookingid&quot;: 167
+  },
+  {
+    &quot;bookingid&quot;: 151
+  },
+  {
+    &quot;bookingid&quot;: 160
+  },
+  {
+    &quot;bookingid&quot;: 220
+  },
+  {
+    &quot;bookingid&quot;: 46
+  },
+  {
+    &quot;bookingid&quot;: 92
+  },
+  {
+    &quot;bookingid&quot;: 8
+  },
+  {
+    &quot;bookingid&quot;: 258
+  },
+  {
+    &quot;bookingid&quot;: 66
+  },
+  {
+    &quot;bookingid&quot;: 24
+  },
+  {
+    &quot;bookingid&quot;: 144
+  },
+  {
+    &quot;bookingid&quot;: 228
+  },
+  {
+    &quot;bookingid&quot;: 82
+  },
+  {
+    &quot;bookingid&quot;: 171
+  },
+  {
+    &quot;bookingid&quot;: 51
+  },
+  {
+    &quot;bookingid&quot;: 43
+  },
+  {
+    &quot;bookingid&quot;: 41
+  },
+  {
+    &quot;bookingid&quot;: 264
+  },
+  {
+    &quot;bookingid&quot;: 262
+  },
+  {
+    &quot;bookingid&quot;: 290
+  },
+  {
+    &quot;bookingid&quot;: 145
+  },
+  {
+    &quot;bookingid&quot;: 232
+  },
+  {
+    &quot;bookingid&quot;: 9
+  },
+  {
+    &quot;bookingid&quot;: 93
+  },
+  {
+    &quot;bookingid&quot;: 114
+  },
+  {
+    &quot;bookingid&quot;: 281
+  },
+  {
+    &quot;bookingid&quot;: 42
+  },
+  {
+    &quot;bookingid&quot;: 126
+  },
+  {
+    &quot;bookingid&quot;: 140
+  },
+  {
+    &quot;bookingid&quot;: 270
+  },
+  {
+    &quot;bookingid&quot;: 121
+  },
+  {
+    &quot;bookingid&quot;: 218
+  },
+  {
+    &quot;bookingid&quot;: 163
+  },
+  {
+    &quot;bookingid&quot;: 45
+  },
+  {
+    &quot;bookingid&quot;: 263
+  },
+  {
+    &quot;bookingid&quot;: 249
+  },
+  {
+    &quot;bookingid&quot;: 186
+  },
+  {
+    &quot;bookingid&quot;: 71
+  },
+  {
+    &quot;bookingid&quot;: 235
+  },
+  {
+    &quot;bookingid&quot;: 255
+  },
+  {
+    &quot;bookingid&quot;: 112
+  },
+  {
+    &quot;bookingid&quot;: 149
+  },
+  {
+    &quot;bookingid&quot;: 179
+  },
+  {
+    &quot;bookingid&quot;: 84
+  },
+  {
+    &quot;bookingid&quot;: 122
+  },
+  {
+    &quot;bookingid&quot;: 16
+  },
+  {
+    &quot;bookingid&quot;: 102
+  },
+  {
+    &quot;bookingid&quot;: 143
+  },
+  {
+    &quot;bookingid&quot;: 52
+  },
+  {
+    &quot;bookingid&quot;: 213
+  },
+  {
+    &quot;bookingid&quot;: 265
+  },
+  {
+    &quot;bookingid&quot;: 4
+  },
+  {
+    &quot;bookingid&quot;: 54
+  },
+  {
+    &quot;bookingid&quot;: 280
+  },
+  {
+    &quot;bookingid&quot;: 211
+  },
+  {
+    &quot;bookingid&quot;: 135
+  },
+  {
+    &quot;bookingid&quot;: 100
+  },
+  {
+    &quot;bookingid&quot;: 267
+  },
+  {
+    &quot;bookingid&quot;: 11
+  },
+  {
+    &quot;bookingid&quot;: 286
+  },
+  {
+    &quot;bookingid&quot;: 132
+  },
+  {
+    &quot;bookingid&quot;: 3
+  },
+  {
+    &quot;bookingid&quot;: 87
+  },
+  {
+    &quot;bookingid&quot;: 32
+  },
+  {
+    &quot;bookingid&quot;: 169
+  },
+  {
+    &quot;bookingid&quot;: 282
+  },
+  {
+    &quot;bookingid&quot;: 173
+  },
+  {
+    &quot;bookingid&quot;: 29
+  },
+  {
+    &quot;bookingid&quot;: 245
+  },
+  {
+    &quot;bookingid&quot;: 120
+  },
+  {
+    &quot;bookingid&quot;: 206
+  },
+  {
+    &quot;bookingid&quot;: 254
+  },
+  {
+    &quot;bookingid&quot;: 48
+  },
+  {
+    &quot;bookingid&quot;: 91
+  },
+  {
+    &quot;bookingid&quot;: 27
+  },
+  {
+    &quot;bookingid&quot;: 67
+  },
+  {
+    &quot;bookingid&quot;: 272
+  },
+  {
+    &quot;bookingid&quot;: 55
+  },
+  {
+    &quot;bookingid&quot;: 193
+  },
+  {
+    &quot;bookingid&quot;: 230
+  },
+  {
+    &quot;bookingid&quot;: 117
+  },
+  {
+    &quot;bookingid&quot;: 124
+  },
+  {
+    &quot;bookingid&quot;: 141
+  },
+  {
+    &quot;bookingid&quot;: 195
+  },
+  {
+    &quot;bookingid&quot;: 243
+  },
+  {
+    &quot;bookingid&quot;: 241
+  },
+  {
+    &quot;bookingid&quot;: 242
+  },
+  {
+    &quot;bookingid&quot;: 38
+  },
+  {
+    &quot;bookingid&quot;: 203
+  },
+  {
+    &quot;bookingid&quot;: 88
+  },
+  {
+    &quot;bookingid&quot;: 157
+  },
+  {
+    &quot;bookingid&quot;: 83
+  },
+  {
+    &quot;bookingid&quot;: 233
+  },
+  {
+    &quot;bookingid&quot;: 191
+  },
+  {
+    &quot;bookingid&quot;: 21
+  },
+  {
+    &quot;bookingid&quot;: 276
+  },
+  {
+    &quot;bookingid&quot;: 152
+  },
+  {
+    &quot;bookingid&quot;: 49
+  },
+  {
+    &quot;bookingid&quot;: 201
+  },
+  {
+    &quot;bookingid&quot;: 34
+  },
+  {
+    &quot;bookingid&quot;: 287
+  },
+  {
+    &quot;bookingid&quot;: 64
+  },
+  {
+    &quot;bookingid&quot;: 246
+  },
+  {
+    &quot;bookingid&quot;: 277
+  },
+  {
+    &quot;bookingid&quot;: 194
+  },
+  {
+    &quot;bookingid&quot;: 81
+  },
+  {
+    &quot;bookingid&quot;: 44
+  },
+  {
+    &quot;bookingid&quot;: 239
+  },
+  {
+    &quot;bookingid&quot;: 18
+  },
+  {
+    &quot;bookingid&quot;: 192
+  },
+  {
+    &quot;bookingid&quot;: 99
+  },
+  {
+    &quot;bookingid&quot;: 177
+  },
+  {
+    &quot;bookingid&quot;: 200
+  },
+  {
+    &quot;bookingid&quot;: 7
+  },
+  {
+    &quot;bookingid&quot;: 30
+  },
+  {
+    &quot;bookingid&quot;: 231
+  },
+  {
+    &quot;bookingid&quot;: 178
+  },
+  {
+    &quot;bookingid&quot;: 25
+  },
+  {
+    &quot;bookingid&quot;: 165
+  },
+  {
+    &quot;bookingid&quot;: 106
+  },
+  {
+    &quot;bookingid&quot;: 31
+  },
+  {
+    &quot;bookingid&quot;: 202
+  },
+  {
+    &quot;bookingid&quot;: 158
+  },
+  {
+    &quot;bookingid&quot;: 237
+  },
+  {
+    &quot;bookingid&quot;: 131
+  },
+  {
+    &quot;bookingid&quot;: 58
+  },
+  {
+    &quot;bookingid&quot;: 253
+  },
+  {
+    &quot;bookingid&quot;: 37
+  },
+  {
+    &quot;bookingid&quot;: 123
+  },
+  {
+    &quot;bookingid&quot;: 271
+  },
+  {
+    &quot;bookingid&quot;: 36
+  },
+  {
+    &quot;bookingid&quot;: 74
+  },
+  {
+    &quot;bookingid&quot;: 116
+  },
+  {
+    &quot;bookingid&quot;: 185
+  },
+  {
+    &quot;bookingid&quot;: 183
+  },
+  {
+    &quot;bookingid&quot;: 75
+  },
+  {
+    &quot;bookingid&quot;: 257
+  },
+  {
+    &quot;bookingid&quot;: 223
+  },
+  {
+    &quot;bookingid&quot;: 208
+  },
+  {
+    &quot;bookingid&quot;: 274
+  },
+  {
+    &quot;bookingid&quot;: 115
+  },
+  {
+    &quot;bookingid&quot;: 162
+  },
+  {
+    &quot;bookingid&quot;: 60
+  },
+  {
+    &quot;bookingid&quot;: 12
+  },
+  {
+    &quot;bookingid&quot;: 219
+  },
+  {
+    &quot;bookingid&quot;: 59
+  },
+  {
+    &quot;bookingid&quot;: 181
+  },
+  {
+    &quot;bookingid&quot;: 278
+  },
+  {
+    &quot;bookingid&quot;: 20
+  },
+  {
+    &quot;bookingid&quot;: 261
+  },
+  {
+    &quot;bookingid&quot;: 35
+  },
+  {
+    &quot;bookingid&quot;: 68
+  },
+  {
+    &quot;bookingid&quot;: 248
+  },
+  {
+    &quot;bookingid&quot;: 130
+  },
+  {
+    &quot;bookingid&quot;: 156
+  },
+  {
+    &quot;bookingid&quot;: 15
+  },
+  {
+    &quot;bookingid&quot;: 78
+  },
+  {
+    &quot;bookingid&quot;: 22
+  },
+  {
+    &quot;bookingid&quot;: 182
+  },
+  {
+    &quot;bookingid&quot;: 210
+  },
+  {
+    &quot;bookingid&quot;: 284
+  },
+  {
+    &quot;bookingid&quot;: 215
+  },
+  {
+    &quot;bookingid&quot;: 26
+  },
+  {
+    &quot;bookingid&quot;: 174
+  },
+  {
+    &quot;bookingid&quot;: 204
+  },
+  {
+    &quot;bookingid&quot;: 289
+  },
+  {
+    &quot;bookingid&quot;: 23
+  },
+  {
+    &quot;bookingid&quot;: 155
+  },
+  {
+    &quot;bookingid&quot;: 101
+  },
+  {
+    &quot;bookingid&quot;: 221
+  },
+  {
+    &quot;bookingid&quot;: 133
+  },
+  {
+    &quot;bookingid&quot;: 63
+  },
+  {
+    &quot;bookingid&quot;: 33
+  },
+  {
+    &quot;bookingid&quot;: 65
+  },
+  {
+    &quot;bookingid&quot;: 110
+  },
+  {
+    &quot;bookingid&quot;: 188
+  },
+  {
+    &quot;bookingid&quot;: 10
+  },
+  {
+    &quot;bookingid&quot;: 137
+  },
+  {
+    &quot;bookingid&quot;: 224
+  },
+  {
+    &quot;bookingid&quot;: 1
+  },
+  {
+    &quot;bookingid&quot;: 2
+  },
+  {
+    &quot;bookingid&quot;: 62
+  },
+  {
+    &quot;bookingid&quot;: 247
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:24]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:24]</span>
+                <span class="scenario-name">Create Booking Validation</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1736</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:24]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://restful-booker.herokuapp.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/auth&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.5">{
+&quot;username&quot; : &quot;admin&quot;,
+&quot;password&quot; : &quot;password123&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">844</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">17:51:53.151 request:
+1 &gt; POST https://restful-booker.herokuapp.com/auth
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 45
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;password123&quot;}
+
+17:51:53.991 response time in milliseconds: 839
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1711887713&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=F%2F1HBNwVHu7P%2Bx4pcxxx53keUpODNg4fTACnSmNjuq4%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1711887713&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=F%2F1HBNwVHu7P%2Bx4pcxxx53keUpODNg4fTACnSmNjuq4%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 27
+1 &lt; Etag: W/&quot;1b-lSuFmkGZno1sQaFvr2D3SiZG2aM&quot;
+1 &lt; Date: Sun, 31 Mar 2024 12:21:53 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;token&quot;:&quot;2ebcd9980769f00&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenValue = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;value of the token is &#39;+ tokenValue</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.16">17:51:53.994 [print] value of the token is 2ebcd9980769f00 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/booking&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.28">{
+    &quot;firstname&quot; : &quot;Pushpendra&quot;,
+    &quot;lastname&quot; : &quot;Singh&quot;,
+    &quot;totalprice&quot; : 2222,
+    &quot;depositpaid&quot; : true,
+    &quot;bookingdates&quot; : {
+        &quot;checkin&quot; : &quot;2018-01-01&quot;,
+        &quot;checkout&quot; : &quot;2019-01-01&quot;
+    },
+    &quot;additionalneeds&quot; : &quot;Breakfast&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">830</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.42">17:51:53.998 request:
+2 &gt; POST https://restful-booker.herokuapp.com/booking
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Accept: application/json
+2 &gt; Content-Length: 176
+2 &gt; Host: restful-booker.herokuapp.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;firstname&quot;:&quot;Pushpendra&quot;,&quot;lastname&quot;:&quot;Singh&quot;,&quot;totalprice&quot;:2222,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;additionalneeds&quot;:&quot;Breakfast&quot;}
+
+17:51:54.823 response time in milliseconds: 823
+2 &lt; 200
+2 &lt; Server: Cowboy
+2 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1711887714&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=%2FTKAwU0VGFld7p5QVH3IWwIeid0AR83NoXSuH8nzarI%3D&quot;}]}
+2 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1711887714&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=%2FTKAwU0VGFld7p5QVH3IWwIeid0AR83NoXSuH8nzarI%3D
+2 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 204
+2 &lt; Etag: W/&quot;cc-Rj7G/2ZSiNHpAKPjc7rXu6OEYBs&quot;
+2 &lt; Date: Sun, 31 Mar 2024 12:21:54 GMT
+2 &lt; Via: 1.1 vegur
+{&quot;bookingid&quot;:313,&quot;booking&quot;:{&quot;firstname&quot;:&quot;Pushpendra&quot;,&quot;lastname&quot;:&quot;Singh&quot;,&quot;totalprice&quot;:2222,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2018-01-01&quot;,&quot;checkout&quot;:&quot;2019-01-01&quot;},&quot;additionalneeds&quot;:&quot;Breakfast&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def BookingId = response.bookingid</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print BookingId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.45">17:51:54.831 [print] 313 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.46">17:51:54.833 [print] {
+  &quot;bookingid&quot;: 313,
+  &quot;booking&quot;: {
+    &quot;firstname&quot;: &quot;Pushpendra&quot;,
+    &quot;lastname&quot;: &quot;Singh&quot;,
+    &quot;totalprice&quot;: 2222,
+    &quot;depositpaid&quot;: true,
+    &quot;bookingdates&quot;: {
+      &quot;checkin&quot;: &quot;2018-01-01&quot;,
+      &quot;checkout&quot;: &quot;2019-01-01&quot;
+    },
+    &quot;additionalneeds&quot;: &quot;Breakfast&quot;
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.booking.firstname == &#39;Pushpendra&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">47</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.booking.lastname == &#39;Singh&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:50]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:50]</span>
+                <span class="scenario-name">Getting single booking</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>872</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:50]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:50]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://restful-booker.herokuapp.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:50]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/auth&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:50]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.5">{
+&quot;username&quot; : &quot;admin&quot;,
+&quot;password&quot; : &quot;password123&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:50]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:50]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">841</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">17:51:54.894 request:
+1 &gt; POST https://restful-booker.herokuapp.com/auth
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 45
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;password123&quot;}
+
+17:51:55.732 response time in milliseconds: 836
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1711887715&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=lzYbt9kS3mBQyvG9hixQwjgoevpCVXcJYHxYe5%2Fahqc%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1711887715&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=lzYbt9kS3mBQyvG9hixQwjgoevpCVXcJYHxYe5%2Fahqc%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 27
+1 &lt; Etag: W/&quot;1b-3rqB/1l0DMe4qiIXaX3uf0hAC8I&quot;
+1 &lt; Date: Sun, 31 Mar 2024 12:21:55 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;token&quot;:&quot;df409275fe4b70d&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:50]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:50]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenValue = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:50]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;value of the token is &#39;+ tokenValue</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.16">17:51:55.734 [print] value of the token is df409275fe4b70d 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref passed">51</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/booking&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref failed">52</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>path /BookingId</span>
+      </div>
+    </div>
+    <div class="time-cell failed">28</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.52">17:51:55.774 src/test/Features/ApiAssignment.feature:52
+And path /BookingId
+js failed:
+&gt;&gt;&gt;&gt;
+01: /BookingId
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:0 Expected an operand but found /
+/BookingId
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1196)
+- com.intuit.karate.core.ScenarioEngine.path(ScenarioEngine.java:380)
+- com.intuit.karate.ScenarioActions.path(ScenarioActions.java:82)
+- java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+src/test/Features/ApiAssignment.feature:52
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref skipped">53</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref skipped">54</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref skipped">55</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref skipped">56</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def userFirstName = response.firstname</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.57">
+      <div class="step-ref skipped">57</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def userLastName = response.lastname</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.58">
+      <div class="step-ref skipped">58</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print userFirstName + userLastName</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:62]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:62]</span>
+                <span class="scenario-name">Update Booking Validation</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>838</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:62]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:62]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://restful-booker.herokuapp.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:62]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/auth&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:62]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.5">{
+&quot;username&quot; : &quot;admin&quot;,
+&quot;password&quot; : &quot;password123&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:62]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:62]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">814</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">17:51:55.795 request:
+1 &gt; POST https://restful-booker.herokuapp.com/auth
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 45
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;password123&quot;}
+
+17:51:56.605 response time in milliseconds: 808
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1711887716&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=mQY7eiguyGe6PeWw%2FpZSitkFNC78RXwlZvvGRO2DmYg%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1711887716&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=mQY7eiguyGe6PeWw%2FpZSitkFNC78RXwlZvvGRO2DmYg%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 27
+1 &lt; Etag: W/&quot;1b-+QFtbtMrrRpdgBmCL8PLz1n6B8A&quot;
+1 &lt; Date: Sun, 31 Mar 2024 12:21:56 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;token&quot;:&quot;a414a7b2af05512&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:62]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:62]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenValue = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:62]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;value of the token is &#39;+ tokenValue</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.16">17:51:56.608 [print] value of the token is a414a7b2af05512 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.64">
+      <div class="step-ref passed">64</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/booking&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.65">
+      <div class="step-ref failed">65</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>path /BookingId</span>
+      </div>
+    </div>
+    <div class="time-cell failed">20</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65">17:51:56.629 src/test/Features/ApiAssignment.feature:65
+And path /BookingId
+js failed:
+&gt;&gt;&gt;&gt;
+01: /BookingId
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:0 Expected an operand but found /
+/BookingId
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1196)
+- com.intuit.karate.core.ScenarioEngine.path(ScenarioEngine.java:380)
+- com.intuit.karate.ScenarioActions.path(ScenarioActions.java:82)
+- java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+src/test/Features/ApiAssignment.feature:65
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.66">
+      <div class="step-ref skipped">66</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.67">
+      <div class="step-ref skipped">67</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.68">
+      <div class="step-ref skipped">68</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>header Cookie = &#39;token=&#39;+tokenValue</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.69">
+      <div class="step-ref skipped">69</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def payload =</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.69">{
+&quot;firstname&quot; : &quot;Pushpendra&quot;,
+    &quot;lastname&quot; : &quot;singh&quot;,
+    &quot;totalprice&quot; : 1021,
+    &quot;depositpaid&quot; : true,
+    &quot;bookingdates&quot; : {
+&quot;checkin&quot; : &quot;2018-01-01&quot;,
+&quot;checkout&quot; : &quot;2019-01-01&quot;
+    },
+    &quot;additionalneeds&quot; : &quot;lunch&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.83">
+      <div class="step-ref skipped">83</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request payload</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.84">
+      <div class="step-ref skipped">84</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.85">
+      <div class="step-ref skipped">85</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.86">
+      <div class="step-ref skipped">86</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.87">
+      <div class="step-ref skipped">87</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print response.additionalneeds</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.88">
+      <div class="step-ref skipped">88</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>match response.additionalneeds == &#39;lunch&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:90]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:90]</span>
+                <span class="scenario-name">Partially updating the booking details</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>853</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:90]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:90]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://restful-booker.herokuapp.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:90]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/auth&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:90]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.5">{
+&quot;username&quot; : &quot;admin&quot;,
+&quot;password&quot; : &quot;password123&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:90]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:90]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">845</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">17:51:56.643 request:
+1 &gt; POST https://restful-booker.herokuapp.com/auth
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 45
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;password123&quot;}
+
+17:51:57.484 response time in milliseconds: 839
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1711887717&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=QL%2Fu8XRmyVIHsD3qQp%2FxiRc4Ktnqbrq7rVchctOlUxk%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1711887717&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=QL%2Fu8XRmyVIHsD3qQp%2FxiRc4Ktnqbrq7rVchctOlUxk%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 27
+1 &lt; Etag: W/&quot;1b-N5Y93B93RpPutPAaLtPaRZbphzw&quot;
+1 &lt; Date: Sun, 31 Mar 2024 12:21:57 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;token&quot;:&quot;b9b6a0d952bee88&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:90]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:90]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenValue = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:90]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;value of the token is &#39;+ tokenValue</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.16">17:51:57.488 [print] value of the token is b9b6a0d952bee88 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.91">
+      <div class="step-ref passed">91</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/booking&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.92">
+      <div class="step-ref failed">92</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>path /BookingId</span>
+      </div>
+    </div>
+    <div class="time-cell failed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.92">17:51:57.490 src/test/Features/ApiAssignment.feature:92
+And path /BookingId
+js failed:
+&gt;&gt;&gt;&gt;
+01: /BookingId
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:0 Expected an operand but found /
+/BookingId
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1196)
+- com.intuit.karate.core.ScenarioEngine.path(ScenarioEngine.java:380)
+- com.intuit.karate.ScenarioActions.path(ScenarioActions.java:82)
+- java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+src/test/Features/ApiAssignment.feature:92
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.93">
+      <div class="step-ref skipped">93</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.94">
+      <div class="step-ref skipped">94</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.95">
+      <div class="step-ref skipped">95</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>header Cookie = &#39;token=&#39;+tokenValue</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.96">
+      <div class="step-ref skipped">96</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.96">{
+    &quot;firstname&quot; : &quot;Rishabh&quot;,
+    &quot;lastname&quot; : &quot;Singh&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.103">
+      <div class="step-ref skipped">103</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method patch</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.104">
+      <div class="step-ref skipped">104</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.105">
+      <div class="step-ref skipped">105</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.106">
+      <div class="step-ref skipped">106</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>match response.firstname == &#39;Rishabh&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:108]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:108]</span>
+                <span class="scenario-name">Booking deletion validation</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>865</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:108]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:108]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://restful-booker.herokuapp.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:108]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/auth&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:108]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.5">{
+&quot;username&quot; : &quot;admin&quot;,
+&quot;password&quot; : &quot;password123&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:108]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:108]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">861</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">17:51:57.500 request:
+1 &gt; POST https://restful-booker.herokuapp.com/auth
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 45
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;password123&quot;}
+
+17:51:58.358 response time in milliseconds: 857
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1711887718&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=sMVCQM%2BZiONkTqjcdKn1PiyZDvCFPzYzk1JadCL54tM%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1711887718&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=sMVCQM%2BZiONkTqjcdKn1PiyZDvCFPzYzk1JadCL54tM%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 27
+1 &lt; Etag: W/&quot;1b-Sg9hyWrfwIcPUmjWZFDfWh6HWSA&quot;
+1 &lt; Date: Sun, 31 Mar 2024 12:21:58 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;token&quot;:&quot;0991642c6c3d4d5&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:108]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:108]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenValue = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:108]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;value of the token is &#39;+ tokenValue</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.16">17:51:58.360 [print] value of the token is 0991642c6c3d4d5 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.109">
+      <div class="step-ref passed">109</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/booking&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.110">
+      <div class="step-ref failed">110</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>path /BookingId</span>
+      </div>
+    </div>
+    <div class="time-cell failed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.110">17:51:58.364 src/test/Features/ApiAssignment.feature:110
+And path /BookingId
+js failed:
+&gt;&gt;&gt;&gt;
+01: /BookingId
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:0 Expected an operand but found /
+/BookingId
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1196)
+- com.intuit.karate.core.ScenarioEngine.path(ScenarioEngine.java:380)
+- com.intuit.karate.ScenarioActions.path(ScenarioActions.java:82)
+- java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+src/test/Features/ApiAssignment.feature:110
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.111">
+      <div class="step-ref skipped">111</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.112">
+      <div class="step-ref skipped">112</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>header Cookie = &#39;token=&#39;+tokenValue</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.113">
+      <div class="step-ref skipped">113</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.114">
+      <div class="step-ref skipped">114</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

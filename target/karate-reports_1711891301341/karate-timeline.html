@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/Features\/ApiAssignment[1:19]","start":1711891111268,"end":1711891126391,"title":"src\/test\/Features\/ApiAssignment[1:19] 18:48:31.268-18:48:46.391 Getting all the booking id's"},{"id":2,"group":1,"content":"src\/test\/Features\/ApiAssignment[2:25]","start":1711891126409,"end":1711891128215,"title":"src\/test\/Features\/ApiAssignment[2:25] 18:48:46.409-18:48:48.215 Create Booking Validation"},{"id":3,"group":1,"content":"src\/test\/Features\/ApiAssignment[3:51]","start":1711891128224,"end":1711891130076,"title":"src\/test\/Features\/ApiAssignment[3:51] 18:48:48.224-18:48:50.076 Getting single booking","className":"failed"},{"id":4,"group":1,"content":"src\/test\/Features\/ApiAssignment[4:63]","start":1711891130105,"end":1711891131800,"title":"src\/test\/Features\/ApiAssignment[4:63] 18:48:50.105-18:48:51.800 Update Booking Validation","className":"failed"},{"id":5,"group":1,"content":"src\/test\/Features\/ApiAssignment[5:91]","start":1711891131818,"end":1711891133571,"title":"src\/test\/Features\/ApiAssignment[5:91] 18:48:51.818-18:48:53.571 Partially updating the booking details","className":"failed"},{"id":6,"group":1,"content":"src\/test\/Features\/ApiAssignment[6:109]","start":1711891133584,"end":1711891135318,"title":"src\/test\/Features\/ApiAssignment[6:109] 18:48:53.584-18:48:55.318 Booking deletion validation","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
